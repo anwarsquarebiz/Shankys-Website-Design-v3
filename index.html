@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+  </head>
+  <body>
+    <!-- Navbar section START -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="/img/logo.png" alt="logo" />
+      </div>
+
+      <div class="navlinks">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="">Contact Us</a></li>
+
+          <li><a class="auth-buttons login-link" href="">Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Navbar section END -->
+
+    <!-- Navbar Mobile section START -->
+    <div class="navbar-mobile">
+      <div class="logo">
+        <img src="/img/mobile-logo.png" alt="logo" />
+      </div>
+
+      <div class="hamburger-icon">
+        <ul>
+          <li>
+            <a class="auth-buttons-mobile login-link-mobile" href="">Login</a>
+          </li>
+        </ul>
+        <i onclick="toggleMobileNav()" class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div style="display: none" id="navlinks-mobile" class="navlinks-mobile">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Blogs</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- Navbar Mobile section END -->
+
+    <!-- Hero Section START -->
+    <div class="hero-section-container">
+      <div class="hero-section">
+        <div class="hero-section-title">
+          Where Profit
+          <br />
+          Meets Possibilities
+        </div>
+
+        <div class="hero-section-subtitle">
+          Achieve your financial dreams by learning basic to advanced
+          <br class="hero-section-subtitle-break-point" />
+          strategies and tips from expert trader.
+        </div>
+
+        <div class="animated-button">
+          <a class="animated-button-internal"> Join The Membership </a>
+        </div>
+
+        <div class="hero-left-section-bottom">
+          <img src="/img/learners-photos.png" alt="" />
+          <div class="happy-customers-count">
+            <div class="customers-count">1500+</div>
+            <div class="customers-text">Happy Learners</div>
+          </div>
+          <div class="horizontal-divider">
+            <img src="img/svg.svg" alt="" />
+          </div>
+          <div class="happy-customers-rating">
+            <div class="customers-rating">
+              4.8+ <span class="customers-text">(563 Ratings)</span>
+            </div>
+            <div>
+              <img class="customers-stars" src="img/stars.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="hero-section-container"
+      style="justify-content: flex-start; margin-top: 31px"
+    >
+      <div
+        class="hero-section-bottom-mobile"
+        style="align-items: center; gap: 15px"
+      >
+        <img style="height: 36px" src="/img/learners-photos.png" alt="" />
+        <div class="happy-customers-count">
+          <div style="color: #1d1919; font-size: 14px" class="customers-count">
+            1500+
+          </div>
+          <div style="color: #1d1919; font-size: 12px" class="customers-text">
+            Happy Learners
+          </div>
+        </div>
+        <div class="horizontal-divider">
+          <img src="img/svg.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="hero-section-container mobile-view-flex"
+      style="justify-content: flex-start"
+    >
+      <div class="happy-customers-rating">
+        <div
+          class="customers-rating"
+          style="color: #1d1919; font-size: 14px; margin-top: 25px"
+        >
+          4.8+
+          <span style="color: #1d1919; font-size: 14px" class="customers-text"
+            >(563 Ratings)</span
+          >
+        </div>
+        <div>
+          <img class="customers-stars" src="img/stars.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section END -->
+
+    <!-- Services Section START -->
+    <div class="service-section-container">
+      <div class="service-section-title">
+        What you will Learn <br class="mobile-view-block" />on
+        <br class="hide-on-mobile" />the Membership
+        <br />
+
+        <svg
+          class="service-title-vector hide-on-mobile"
+          xmlns="http://www.w3.org/2000/svg"
+          width="422"
+          height="30"
+          viewBox="0 0 422 30"
+          fill="none"
+        >
+          <path
+            d="M9.2071 27.4918C6.7372 27.3456 4.7699 26.6349 3.26003 24.7485L3.07201 24.4939C2.8723 24.2235 2.76527 23.8156 3.0251 23.0704C3.29461 22.2975 3.87658 21.4751 4.50734 20.8805L4.5088 20.8791C5.47461 19.967 6.74568 19.4287 8.36232 19.0729C9.50568 18.8213 10.6241 18.6925 11.8412 18.5525C12.4442 18.4831 13.0713 18.4109 13.7378 18.3196L13.7379 18.3196C19.6459 17.5099 25.5783 16.8893 31.5443 16.2652C33.2971 16.0818 35.0528 15.8981 36.8116 15.7093C52.4975 14.0259 68.1999 12.5037 83.9189 11.1426L83.9199 11.1425C139.386 6.31453 195.282 3.33056 250.967 3.19573C278.833 3.13655 306.59 3.41226 334.436 4.23876L334.437 4.23878C346.539 4.59394 358.613 5.27363 370.728 5.95561C372.516 6.05628 374.305 6.157 376.096 6.25674C378.36 6.38286 380.62 6.50134 382.877 6.61963C394.544 7.23113 406.112 7.83743 417.561 9.46816L417.564 9.4687C418.301 9.57231 418.628 9.85042 418.777 10.0426C418.942 10.2558 419.033 10.5528 418.998 10.901C418.93 11.5637 418.413 12.3185 417.184 12.3577C406.578 12.6941 395.995 12.3897 385.338 12.0832C380.437 11.9422 375.52 11.8008 370.579 11.7211L370.578 11.721C359.804 11.5494 349.008 11.5074 338.232 11.4654C333.707 11.4478 329.187 11.4302 324.672 11.4031L324.672 11.403C270.344 11.0952 215.884 12.4721 161.651 15.3078C134.333 16.7217 107.056 18.6826 79.815 20.9169L79.8144 20.9169C66.1865 22.0384 52.5681 23.2753 38.9592 24.6277C35.2628 24.9926 31.5253 25.3855 27.7982 25.7773C24.571 26.1166 21.3516 26.455 18.1736 26.7737L18.1713 26.7739C17.2611 26.8662 16.3837 26.9743 15.5324 27.0791C13.2831 27.3562 11.216 27.6108 9.2071 27.4918Z"
+            fill="#DE1F54"
+            stroke="#FFE8E8"
+            stroke-width="4.5"
+          />
+        </svg>
+
+        <svg
+          class="service-title-vector-mobile mobile-view-block"
+          xmlns="http://www.w3.org/2000/svg"
+          width="241"
+          height="23"
+          viewBox="0 0 241 23"
+          fill="none"
+        >
+          <path
+            d="M3.27527 19.8305C2.93144 19.6029 2.54962 19.2217 2.18835 18.5284L2.09483 18.3316C1.99959 18.1312 1.94452 17.7199 2.1572 17.0462C2.36279 16.395 2.74548 15.7505 3.1096 15.3159L3.11064 15.3146C4.02774 14.2181 5.08836 14.0483 6.85524 13.7654C7.22452 13.7063 7.62467 13.6422 8.0608 13.5637L8.06097 13.5637C11.4505 12.9533 14.8394 12.4909 18.2726 12.0225C19.2858 11.8843 20.3028 11.7455 21.3248 11.6022C30.3546 10.3373 39.386 9.19873 48.4191 8.18634L48.4203 8.1862C80.2988 4.59382 112.324 2.44847 144.084 2.53271C159.99 2.58139 175.813 2.89204 191.657 3.63414L191.658 3.63418C198.531 3.95294 205.372 4.5252 212.26 5.10133C213.277 5.18637 214.295 5.2715 215.314 5.35592C216.611 5.4634 217.904 5.56461 219.191 5.66542C225.825 6.18495 232.325 6.69404 238.715 7.9972L238.72 7.99814C238.726 7.99946 238.731 8.00008 238.736 8.0006C238.756 8.00298 238.76 8.00336 238.788 8.05943C238.85 8.18411 238.915 8.4554 238.864 8.82888C238.814 9.19758 238.674 9.49804 238.532 9.66958C238.416 9.81011 238.354 9.81123 238.333 9.8116L238.331 9.81165C232.302 10.0375 226.346 9.76596 220.298 9.49017C217.495 9.36237 214.673 9.23366 211.814 9.15314L211.813 9.15312C205.659 8.9815 199.481 8.91155 193.325 8.84185C190.744 8.81263 188.167 8.78345 185.597 8.74684L185.596 8.74683C154.553 8.31961 123.357 9.21416 92.2221 11.2539C76.534 12.2704 60.8471 13.7161 45.1735 15.3757L45.1728 15.3757C37.3286 16.2092 29.4845 17.1333 21.6402 18.1481C19.5218 18.4202 17.3501 18.7179 15.1898 19.0141C13.3253 19.2697 11.4693 19.5241 9.66336 19.7599L9.66056 19.7603C9.18769 19.8227 8.71196 19.8993 8.26403 19.9717L8.22441 19.9781C7.78186 20.0496 7.36507 20.117 6.95293 20.1733C6.09637 20.2905 5.36998 20.3431 4.73718 20.2876C4.12368 20.2338 3.65654 20.0829 3.27527 19.8305Z"
+            fill="#DE1F54"
+            stroke="white"
+            stroke-width="4"
+          />
+        </svg>
+      </div>
+
+      <!-- Services Grid -->
+
+      <div class="grid-container">
+        
+        <div class="item1">
+          <div class="service-box">                        
+            <div class="service-image-container">
+              <img class="service-image-icon" src="img/multi-funds-icon-1.png" />
+            </div>
+ 
+              <div class="service-title">Basis of Stock Market</div>
+              <p class="service-text">
+                Master stock market basics: terms and key principles for a solid foundation.
+              </p>
+          </div>
+        </div>
+
+        <div class="item2">
+          <div class="service-box">                        
+            <div class="service-image-container">
+              <img class="service-image-icon" src="img/future-opt-icon-1.png" />
+            </div>
+ 
+              <div class="service-title">Technicals of Option</div>
+              <p class="service-text">
+                Explore basics, Greeks, volatility, and strategies for successful trading.
+              </p>
+          </div>
+        </div>
+        
+        <div class="item3">
+          <div class="service-box">                        
+            <div class="service-image-container">
+              <img class="service-image-icon" src="img/commody-icon-1.png" />
+            </div>
+ 
+              <div class="service-title">Option Trading</div>
+              <p class="service-text">
+                Master option basics and key strategies for confident trading.
+              </p>
+          </div>
+        </div>
+
+        <div class="item4">
+          <div class="service-box">                        
+            <div class="service-image-container">
+              <img class="service-image-icon" src="img/currency-icon-1.png" />
+            </div>
+ 
+              <div class="service-title">Strategy for Profit Trading</div>
+              <p class="service-text">
+                Optimize trades, develop a robust strategy for profitable trading success.
+              </p>
+          </div>
+        </div>
+        
+        <div class="item5">
+          <div class="service-double-text">
+            <span class="service-double-title">5000+</span> students trust Shanky Trading for stock <br class="hide-on-mobile">market, option trading
+            and more...
+          </div>
+        
+          <div>
+            <div class="logos">
+              <div class="logos-slide-top">
+                <img src="img/ellipse-2.png" alt="">
+                <img src="img/ellipse-3.png" alt="">
+                <img src="img/ellipse-4.png" alt="">
+                <img src="img/ellipse-5.png" alt="">
+                <img src="img/ellipse-71.png" alt="">
+                <img src="img/ellipse-71-1.png" alt="">
+                <img src="img/ellipse-73.png" alt="">
+                <img src="img/ellipse-73-1.png" alt=>
+              </div>
+        
+              <div class="logos-slide-top">
+                <img src="img/ellipse-2.png" alt="">
+                <img src="img/ellipse-3.png" alt="">
+                <img src="img/ellipse-4.png" alt="">
+                <img src="img/ellipse-5.png" alt="">
+                <img src="img/ellipse-71.png" alt="">
+                <img src="img/ellipse-71-1.png" alt="">
+                <img src="img/ellipse-73.png" alt="">
+                <img src="img/ellipse-73-1.png" alt=>
+              </div>
+        
+              <div class="logos-slide-top">
+                <img src="img/ellipse-2.png" alt="">
+                <img src="img/ellipse-3.png" alt="">
+                <img src="img/ellipse-4.png" alt="">
+                <img src="img/ellipse-5.png" alt="">
+                <img src="img/ellipse-71.png" alt="">
+                <img src="img/ellipse-71-1.png" alt="">
+                <img src="img/ellipse-73.png" alt="">
+                <img src="img/ellipse-73-1.png" alt=>
+              </div>
+            </div>
+        
+            <!--  -->
+            <div class="logos">
+              <div class="logos-slide-bottom">
+                <img src="img/ellipse-2.png" alt="">
+                <img src="img/ellipse-3.png" alt="">
+                <img src="img/ellipse-4.png" alt="">
+                <img src="img/ellipse-5.png" alt="">
+                <img src="img/ellipse-71.png" alt="">
+                <img src="img/ellipse-71-1.png" alt="">
+                <img src="img/ellipse-73.png" alt="">
+                <img src="img/ellipse-73-1.png" alt=>
+              </div>
+        
+              <div class="logos-slide-bottom">
+                <img src="img/ellipse-2.png" alt="">
+                <img src="img/ellipse-3.png" alt="">
+                <img src="img/ellipse-4.png" alt="">
+                <img src="img/ellipse-5.png" alt="">
+                <img src="img/ellipse-71.png" alt="">
+                <img src="img/ellipse-71-1.png" alt="">
+                <img src="img/ellipse-73.png" alt="">
+                <img src="img/ellipse-73-1.png" alt=>
+              </div>
+        
+              <div class="logos-slide-bottom">
+                <img src="img/ellipse-2.png" alt="">
+                <img src="img/ellipse-3.png" alt="">
+                <img src="img/ellipse-4.png" alt="">
+                <img src="img/ellipse-5.png" alt="">
+                <img src="img/ellipse-71.png" alt="">
+                <img src="img/ellipse-71-1.png" alt="">
+                <img src="img/ellipse-73.png" alt="">
+                <img src="img/ellipse-73-1.png" alt=>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        </div>
+
+    </div>
+    <!-- Services Section END -->
+
+    <!-- Pricing Section START -->
+
+    <div class="pricing-section">
+      <div class="pricing-section-title">
+        Ready to get started 
+        <br />
+
+        <svg
+          class="pricing-title-vector hide-on-mobile"
+          xmlns="http://www.w3.org/2000/svg"
+          width="422"
+          height="30"
+          viewBox="0 0 422 30"
+          fill="none"
+        >
+          <path
+            d="M9.2071 27.4918C6.7372 27.3456 4.7699 26.6349 3.26003 24.7485L3.07201 24.4939C2.8723 24.2235 2.76527 23.8156 3.0251 23.0704C3.29461 22.2975 3.87658 21.4751 4.50734 20.8805L4.5088 20.8791C5.47461 19.967 6.74568 19.4287 8.36232 19.0729C9.50568 18.8213 10.6241 18.6925 11.8412 18.5525C12.4442 18.4831 13.0713 18.4109 13.7378 18.3196L13.7379 18.3196C19.6459 17.5099 25.5783 16.8893 31.5443 16.2652C33.2971 16.0818 35.0528 15.8981 36.8116 15.7093C52.4975 14.0259 68.1999 12.5037 83.9189 11.1426L83.9199 11.1425C139.386 6.31453 195.282 3.33056 250.967 3.19573C278.833 3.13655 306.59 3.41226 334.436 4.23876L334.437 4.23878C346.539 4.59394 358.613 5.27363 370.728 5.95561C372.516 6.05628 374.305 6.157 376.096 6.25674C378.36 6.38286 380.62 6.50134 382.877 6.61963C394.544 7.23113 406.112 7.83743 417.561 9.46816L417.564 9.4687C418.301 9.57231 418.628 9.85042 418.777 10.0426C418.942 10.2558 419.033 10.5528 418.998 10.901C418.93 11.5637 418.413 12.3185 417.184 12.3577C406.578 12.6941 395.995 12.3897 385.338 12.0832C380.437 11.9422 375.52 11.8008 370.579 11.7211L370.578 11.721C359.804 11.5494 349.008 11.5074 338.232 11.4654C333.707 11.4478 329.187 11.4302 324.672 11.4031L324.672 11.403C270.344 11.0952 215.884 12.4721 161.651 15.3078C134.333 16.7217 107.056 18.6826 79.815 20.9169L79.8144 20.9169C66.1865 22.0384 52.5681 23.2753 38.9592 24.6277C35.2628 24.9926 31.5253 25.3855 27.7982 25.7773C24.571 26.1166 21.3516 26.455 18.1736 26.7737L18.1713 26.7739C17.2611 26.8662 16.3837 26.9743 15.5324 27.0791C13.2831 27.3562 11.216 27.6108 9.2071 27.4918Z"
+            fill="#DE1F54"
+            stroke="#FFE8E8"
+            stroke-width="4.5"
+          />
+        </svg>
+
+        <svg
+          class="service-title-vector-mobile mobile-view-block"
+          xmlns="http://www.w3.org/2000/svg"
+          width="241"
+          height="23"
+          viewBox="0 0 241 23"
+          fill="none"
+        >
+          <path
+            d="M3.27527 19.8305C2.93144 19.6029 2.54962 19.2217 2.18835 18.5284L2.09483 18.3316C1.99959 18.1312 1.94452 17.7199 2.1572 17.0462C2.36279 16.395 2.74548 15.7505 3.1096 15.3159L3.11064 15.3146C4.02774 14.2181 5.08836 14.0483 6.85524 13.7654C7.22452 13.7063 7.62467 13.6422 8.0608 13.5637L8.06097 13.5637C11.4505 12.9533 14.8394 12.4909 18.2726 12.0225C19.2858 11.8843 20.3028 11.7455 21.3248 11.6022C30.3546 10.3373 39.386 9.19873 48.4191 8.18634L48.4203 8.1862C80.2988 4.59382 112.324 2.44847 144.084 2.53271C159.99 2.58139 175.813 2.89204 191.657 3.63414L191.658 3.63418C198.531 3.95294 205.372 4.5252 212.26 5.10133C213.277 5.18637 214.295 5.2715 215.314 5.35592C216.611 5.4634 217.904 5.56461 219.191 5.66542C225.825 6.18495 232.325 6.69404 238.715 7.9972L238.72 7.99814C238.726 7.99946 238.731 8.00008 238.736 8.0006C238.756 8.00298 238.76 8.00336 238.788 8.05943C238.85 8.18411 238.915 8.4554 238.864 8.82888C238.814 9.19758 238.674 9.49804 238.532 9.66958C238.416 9.81011 238.354 9.81123 238.333 9.8116L238.331 9.81165C232.302 10.0375 226.346 9.76596 220.298 9.49017C217.495 9.36237 214.673 9.23366 211.814 9.15314L211.813 9.15312C205.659 8.9815 199.481 8.91155 193.325 8.84185C190.744 8.81263 188.167 8.78345 185.597 8.74684L185.596 8.74683C154.553 8.31961 123.357 9.21416 92.2221 11.2539C76.534 12.2704 60.8471 13.7161 45.1735 15.3757L45.1728 15.3757C37.3286 16.2092 29.4845 17.1333 21.6402 18.1481C19.5218 18.4202 17.3501 18.7179 15.1898 19.0141C13.3253 19.2697 11.4693 19.5241 9.66336 19.7599L9.66056 19.7603C9.18769 19.8227 8.71196 19.8993 8.26403 19.9717L8.22441 19.9781C7.78186 20.0496 7.36507 20.117 6.95293 20.1733C6.09637 20.2905 5.36998 20.3431 4.73718 20.2876C4.12368 20.2338 3.65654 20.0829 3.27527 19.8305Z"
+            fill="#DE1F54"
+            stroke="white"
+            stroke-width="4"
+          />
+        </svg>
+      </div><!-- Pricing Section title end -->
+
+      <div class="plan-switcher">        
+        <div class="plan-switcher-container">
+          <div class="switch-button-active">
+            Monthly
+          </div>
+          <div class="switch-button-inactive">
+            Annually
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center;">
+        <div class="anual-plan-pitch">
+          Annually you have up to <span>75% off, and free Indicators</span> 😍
+        </div>
+      </div>
+
+      <div class="plans-container">
+        <div class="plan simple-plan-border">
+          <div class="plan-name">
+            Free
+          </div>
+          <div class="plan-description">
+            For growing teams building apps & internal
+            tools to streamline workflows.
+          </div>
+          <div class="price"><img src="img/rupee_symbol.svg" alt="">699<span>/ per month</span></div>
+          <div class="plan-divider"></div>
+          <div class="plan-list">
+            <ul>
+              <li>All including Bulb+</li>
+              <li>Bulb + Fire Indicators</li>
+              <li>Discord Live + Spl Zoom Webinar</li>
+              <li>Jailbar + White Panther</li>
+              <li>Weekly Zoom Special Webinar</li>
+            </ul>
+          </div>
+          <div class="plan-link-simple">Get Started <img src="img/arrow-black.svg" alt=""></div>          
+        </div>
+
+        <div class="plan special-plan-border">
+          <div class="plan-tag">
+            Most Popular
+          </div>
+          <div style="position: relative; top : -110px">
+            <div class="plan-name">
+              Premium
+            </div>
+            <div class="plan-description">
+              For growing teams building apps & internal
+              tools to streamline workflows.
+            </div>
+            <div class="price"><img src="img/rupee_symbol.svg" alt="">1699<span>/ per month</span></div>
+            <div class="plan-divider"></div>
+            <div class="plan-list">
+              <ul>
+                <li>All including Bulb+</li>
+                <li>Bulb + Fire Indicators</li>
+                <li>Discord Live + Spl Zoom Webinar</li>
+                <li>Jailbar + White Panther</li>
+                <li>Weekly Zoom Special Webinar</li>
+              </ul>
+            </div>
+            <div class="plan-link-special">Get Started <img src="img/arrow-white.svg" alt=""></div>
+          </div>
+                    
+        </div>
+      </div>
+
+
+    </div><!-- Pricing Section END -->
+
+    <!-- Features Section START -->
+
+    <div class="features-section">
+      <div class="features-section-title">
+        Key Features of the <br class="hide-on-mobile">Membership 
+        <br />
+
+        <svg
+          class="pricing-title-vector hide-on-mobile"
+          xmlns="http://www.w3.org/2000/svg"
+          width="422"
+          height="30"
+          viewBox="0 0 422 30"
+          fill="none"
+        >
+          <path
+            d="M9.2071 27.4918C6.7372 27.3456 4.7699 26.6349 3.26003 24.7485L3.07201 24.4939C2.8723 24.2235 2.76527 23.8156 3.0251 23.0704C3.29461 22.2975 3.87658 21.4751 4.50734 20.8805L4.5088 20.8791C5.47461 19.967 6.74568 19.4287 8.36232 19.0729C9.50568 18.8213 10.6241 18.6925 11.8412 18.5525C12.4442 18.4831 13.0713 18.4109 13.7378 18.3196L13.7379 18.3196C19.6459 17.5099 25.5783 16.8893 31.5443 16.2652C33.2971 16.0818 35.0528 15.8981 36.8116 15.7093C52.4975 14.0259 68.1999 12.5037 83.9189 11.1426L83.9199 11.1425C139.386 6.31453 195.282 3.33056 250.967 3.19573C278.833 3.13655 306.59 3.41226 334.436 4.23876L334.437 4.23878C346.539 4.59394 358.613 5.27363 370.728 5.95561C372.516 6.05628 374.305 6.157 376.096 6.25674C378.36 6.38286 380.62 6.50134 382.877 6.61963C394.544 7.23113 406.112 7.83743 417.561 9.46816L417.564 9.4687C418.301 9.57231 418.628 9.85042 418.777 10.0426C418.942 10.2558 419.033 10.5528 418.998 10.901C418.93 11.5637 418.413 12.3185 417.184 12.3577C406.578 12.6941 395.995 12.3897 385.338 12.0832C380.437 11.9422 375.52 11.8008 370.579 11.7211L370.578 11.721C359.804 11.5494 349.008 11.5074 338.232 11.4654C333.707 11.4478 329.187 11.4302 324.672 11.4031L324.672 11.403C270.344 11.0952 215.884 12.4721 161.651 15.3078C134.333 16.7217 107.056 18.6826 79.815 20.9169L79.8144 20.9169C66.1865 22.0384 52.5681 23.2753 38.9592 24.6277C35.2628 24.9926 31.5253 25.3855 27.7982 25.7773C24.571 26.1166 21.3516 26.455 18.1736 26.7737L18.1713 26.7739C17.2611 26.8662 16.3837 26.9743 15.5324 27.0791C13.2831 27.3562 11.216 27.6108 9.2071 27.4918Z"
+            fill="#DE1F54"
+            stroke="#FFE8E8"
+            stroke-width="4.5"
+          />
+        </svg>
+
+        <svg
+          class="service-title-vector-mobile mobile-view-block"
+          xmlns="http://www.w3.org/2000/svg"
+          width="241"
+          height="23"
+          viewBox="0 0 241 23"
+          fill="none"
+        >
+          <path
+            d="M3.27527 19.8305C2.93144 19.6029 2.54962 19.2217 2.18835 18.5284L2.09483 18.3316C1.99959 18.1312 1.94452 17.7199 2.1572 17.0462C2.36279 16.395 2.74548 15.7505 3.1096 15.3159L3.11064 15.3146C4.02774 14.2181 5.08836 14.0483 6.85524 13.7654C7.22452 13.7063 7.62467 13.6422 8.0608 13.5637L8.06097 13.5637C11.4505 12.9533 14.8394 12.4909 18.2726 12.0225C19.2858 11.8843 20.3028 11.7455 21.3248 11.6022C30.3546 10.3373 39.386 9.19873 48.4191 8.18634L48.4203 8.1862C80.2988 4.59382 112.324 2.44847 144.084 2.53271C159.99 2.58139 175.813 2.89204 191.657 3.63414L191.658 3.63418C198.531 3.95294 205.372 4.5252 212.26 5.10133C213.277 5.18637 214.295 5.2715 215.314 5.35592C216.611 5.4634 217.904 5.56461 219.191 5.66542C225.825 6.18495 232.325 6.69404 238.715 7.9972L238.72 7.99814C238.726 7.99946 238.731 8.00008 238.736 8.0006C238.756 8.00298 238.76 8.00336 238.788 8.05943C238.85 8.18411 238.915 8.4554 238.864 8.82888C238.814 9.19758 238.674 9.49804 238.532 9.66958C238.416 9.81011 238.354 9.81123 238.333 9.8116L238.331 9.81165C232.302 10.0375 226.346 9.76596 220.298 9.49017C217.495 9.36237 214.673 9.23366 211.814 9.15314L211.813 9.15312C205.659 8.9815 199.481 8.91155 193.325 8.84185C190.744 8.81263 188.167 8.78345 185.597 8.74684L185.596 8.74683C154.553 8.31961 123.357 9.21416 92.2221 11.2539C76.534 12.2704 60.8471 13.7161 45.1735 15.3757L45.1728 15.3757C37.3286 16.2092 29.4845 17.1333 21.6402 18.1481C19.5218 18.4202 17.3501 18.7179 15.1898 19.0141C13.3253 19.2697 11.4693 19.5241 9.66336 19.7599L9.66056 19.7603C9.18769 19.8227 8.71196 19.8993 8.26403 19.9717L8.22441 19.9781C7.78186 20.0496 7.36507 20.117 6.95293 20.1733C6.09637 20.2905 5.36998 20.3431 4.73718 20.2876C4.12368 20.2338 3.65654 20.0829 3.27527 19.8305Z"
+            fill="#DE1F54"
+            stroke="white"
+            stroke-width="4"
+          />
+        </svg>
+      </div><!-- Pricing Section title end -->
+
+      <div class="features-container">
+
+        <!-- Single Feature -->
+        <div class="single-feature">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="37" viewBox="0 0 46 37" fill="none">
+            <path d="M9.29297 27.3333C19.7096 32.5416 25.9596 32.5416 36.3763 27.3333"  stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M30.1255 30.4583L32.2089 34.6249C32.2089 34.6249 40.8984 31.8583 43.6672 27.3333C43.6672 25.2499 44.7714 10.3603 37.4172 5.45825C34.2922 3.37492 29.0839 2.33325 29.0839 2.33325L27.0005 6.49992H22.8339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.6006 30.4583L13.5172 34.6249C13.5172 34.6249 4.82764 31.8583 2.05889 27.3333C2.05889 25.2499 0.95472 10.3603 8.30889 5.45825C11.4339 3.37492 16.6422 2.33325 16.6422 2.33325L18.7256 6.49992H22.8922" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.543 23.1666C13.818 23.1666 12.418 21.302 12.418 18.9999C12.418 16.6978 13.818 14.8333 15.543 14.8333C17.268 14.8333 18.668 16.6978 18.668 18.9999C18.668 21.302 17.268 23.1666 15.543 23.1666ZM30.1263 23.1666C28.4013 23.1666 27.0013 21.302 27.0013 18.9999C27.0013 16.6978 28.4013 14.8333 30.1263 14.8333C31.8513 14.8333 33.2513 16.6978 33.2513 18.9999C33.2513 21.302 31.8513 23.1666 30.1263 23.1666Z" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <div class="single-feature-title">
+            Discord Access
+          </div>
+
+          <div class="single-feature-description">
+            Exclusive trading Discord: real-time insights, strategies, and connections.
+          </div>
+        </div><!-- Single Feature -->
+
+        <div class="single-feature">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+            <path d="M43.6667 43.8331H2" stroke="#181818" stroke-width="3" stroke-linecap="round"/>
+            <path d="M41.582 43.8332V28.2082C41.582 27.3794 41.2528 26.5845 40.6667 25.9985C40.0807 25.4124 39.2858 25.0832 38.457 25.0832H32.207C31.3782 25.0832 30.5834 25.4124 29.9973 25.9985C29.4113 26.5845 29.082 27.3794 29.082 28.2082V43.8332V8.4165C29.082 5.47067 29.082 3.99775 28.1654 3.08317C27.2529 2.1665 25.7799 2.1665 22.832 2.1665C19.8862 2.1665 18.4133 2.1665 17.4987 3.08317C16.582 3.99567 16.582 5.46859 16.582 8.4165V43.8332V17.7915C16.582 16.9627 16.2528 16.1678 15.6667 15.5818C15.0807 14.9957 14.2858 14.6665 13.457 14.6665H7.20703C6.37823 14.6665 5.58337 14.9957 4.99732 15.5818C4.41127 16.1678 4.08203 16.9627 4.08203 17.7915V43.8332" stroke="#181818" stroke-width="3"/>
+          </svg>
+
+          <div class="single-feature-title">
+            Live Classes
+          </div>
+
+          <div class="single-feature-description">
+            Attend live sessions for mastering trading with interactive learning and Q&A.
+          </div>
+        </div><!-- Single Feature -->
+
+        <div class="single-feature">
+          <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1701 29.1666C23.3312 27.4288 23.8784 25.3529 23.7246 23.2685C23.5708 21.1842 22.725 19.211 21.3215 17.6624C19.9179 16.1139 18.0372 15.0787 15.9779 14.7213C13.9187 14.364 11.7991 14.705 9.9559 15.6901C8.11266 16.6753 6.65147 18.2481 5.80444 20.1588C4.95742 22.0694 4.77312 24.2083 5.28084 26.2357C5.78856 28.2631 6.95918 30.0627 8.60673 31.3486C10.2543 32.6346 12.2843 33.3331 14.3743 33.3333H37.291C39.381 33.3331 41.411 32.6346 43.0585 31.3486C44.7061 30.0627 45.8767 28.2631 46.3844 26.2357C46.8921 24.2083 46.7078 22.0694 45.8608 20.1588C45.0138 18.2481 43.5526 16.6753 41.7094 15.6901C39.8661 14.705 37.7465 14.364 35.6873 14.7213C33.6281 15.0787 31.7473 16.1139 30.3438 17.6624C28.9402 19.211 28.0944 21.1842 27.9407 23.2685C27.7869 25.3529 28.334 27.4288 29.4951 29.1666H22.1701ZM14.3743 18.7499C12.993 18.7499 11.6682 19.2987 10.6914 20.2754C9.71469 21.2522 9.16596 22.5769 9.16596 23.9583C9.16596 25.3396 9.71469 26.6644 10.6914 27.6411C11.6682 28.6179 12.993 29.1666 14.3743 29.1666C15.7556 29.1666 17.0804 28.6179 18.0571 27.6411C19.0339 26.6644 19.5826 25.3396 19.5826 23.9583C19.5826 22.5769 19.0339 21.2522 18.0571 20.2754C17.0804 19.2987 15.7556 18.7499 14.3743 18.7499ZM37.291 29.1666C38.6723 29.1666 39.9971 28.6179 40.9738 27.6411C41.9506 26.6644 42.4993 25.3396 42.4993 23.9583C42.4993 22.5769 41.9506 21.2522 40.9738 20.2754C39.9971 19.2987 38.6723 18.7499 37.291 18.7499C35.9096 18.7499 34.5849 19.2987 33.6081 20.2754C32.6314 21.2522 32.0826 22.5769 32.0826 23.9583C32.0826 25.3396 32.6314 26.6644 33.6081 27.6411C34.5849 28.6179 35.9096 29.1666 37.291 29.1666Z" fill="#181818"/>
+          </svg>
+
+          <div class="single-feature-title">
+            Recording Videos
+          </div>
+
+          <div class="single-feature-description">
+            Watch videos to master trading techniques at your pace, anywhere.
+          </div>
+        </div><!-- Single Feature -->
+
+        <div class="single-feature">
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" viewBox="0 0 42 32" fill="none">
+            <path d="M9.21458 1.28729C9.40828 1.48078 9.56195 1.71054 9.66679 1.96346C9.77163 2.21637 9.8256 2.48747 9.8256 2.76125C9.8256 3.03503 9.77163 3.30613 9.66679 3.55904C9.56195 3.81196 9.40828 4.04172 9.21458 4.23521C6.08841 7.36191 4.33219 11.6023 4.33219 16.0238C4.33219 20.4452 6.08841 24.6856 9.21458 27.8123C9.41356 28.0045 9.57228 28.2344 9.68146 28.4885C9.79065 28.7427 9.84812 29.0161 9.85052 29.2927C9.85293 29.5693 9.80021 29.8437 9.69546 30.0997C9.59071 30.3557 9.43602 30.5883 9.24041 30.7839C9.0448 30.9796 8.81219 31.1343 8.55616 31.239C8.30012 31.3438 8.02579 31.3965 7.74916 31.3941C7.47254 31.3917 7.19917 31.3342 6.94499 31.225C6.69082 31.1158 6.46093 30.9571 6.26875 30.7581C-1.87083 22.6206 -1.87083 9.42479 6.26875 1.28729C6.65943 0.896727 7.18924 0.67732 7.74167 0.67732C8.29409 0.67732 8.8239 0.896727 9.21458 1.28729ZM35.7396 1.28729C43.8771 9.42688 43.8771 22.6206 35.7396 30.7581C35.3489 31.149 34.819 31.3688 34.2664 31.369C33.7137 31.3692 33.1836 31.1498 32.7927 30.7592C32.4018 30.3685 32.1821 29.8386 32.1819 29.2859C32.1817 28.7333 32.401 28.2032 32.7917 27.8123C35.9178 24.6856 37.6741 20.4452 37.6741 16.0238C37.6741 11.6023 35.9178 7.36191 32.7917 4.23521C32.4007 3.84429 32.1811 3.31409 32.1811 2.76125C32.1811 2.20841 32.4007 1.67821 32.7917 1.28729C33.1826 0.896374 33.7128 0.676758 34.2656 0.676758C34.8185 0.676758 35.3487 0.896374 35.7396 1.28729ZM15.3958 7.27479C15.7864 7.66547 16.0058 8.19528 16.0058 8.74771C16.0058 9.30013 15.7864 9.82994 15.3958 10.2206C14.6374 10.979 14.0358 11.8793 13.6253 12.8702C13.2148 13.8611 13.0036 14.9231 13.0036 15.9956C13.0036 17.0682 13.2148 18.1302 13.6253 19.1211C14.0358 20.1119 14.6374 21.0123 15.3958 21.7706C15.5893 21.9642 15.7427 22.194 15.8473 22.4468C15.9519 22.6997 16.0057 22.9706 16.0056 23.2443C16.0055 23.5179 15.9515 23.7889 15.8467 24.0416C15.7419 24.2944 15.5884 24.5241 15.3948 24.7175C15.2012 24.9109 14.9715 25.0643 14.7186 25.169C14.4658 25.2736 14.1948 25.3274 13.9211 25.3273C13.6475 25.3272 13.3766 25.2732 13.1238 25.1684C12.871 25.0636 12.6413 24.91 12.4479 24.7165C10.1351 22.4035 8.83572 19.2666 8.83572 15.9956C8.83572 12.7247 10.1351 9.58773 12.4479 7.27479C12.6414 7.08109 12.8712 6.92743 13.1241 6.82258C13.377 6.71774 13.6481 6.66378 13.9219 6.66378C14.1957 6.66378 14.4668 6.71774 14.7197 6.82258C14.9726 6.92743 15.2023 7.08109 15.3958 7.27479ZM29.8917 7.27479C32.2045 9.58773 33.5039 12.7247 33.5039 15.9956C33.5039 19.2666 32.2045 22.4035 29.8917 24.7165C29.4987 25.096 28.9725 25.3059 28.4262 25.3012C27.88 25.2964 27.3575 25.0773 26.9712 24.6911C26.5849 24.3048 26.3658 23.7823 26.3611 23.236C26.3563 22.6898 26.5663 22.1635 26.9458 21.7706C27.7043 21.0123 28.3059 20.1119 28.7164 19.1211C29.1268 18.1302 29.3381 17.0682 29.3381 15.9956C29.3381 14.9231 29.1268 13.8611 28.7164 12.8702C28.3059 11.8793 27.7043 10.979 26.9458 10.2206C26.5663 9.8277 26.3563 9.30145 26.3611 8.75521C26.3658 8.20896 26.5849 7.68644 26.9712 7.30017C27.3575 6.9139 27.88 6.6948 28.4262 6.69005C28.9725 6.68531 29.4987 6.8953 29.8917 7.27479ZM21.1708 13.0456C21.5812 13.0456 21.9876 13.1265 22.3667 13.2835C22.7459 13.4405 23.0904 13.6707 23.3805 13.9609C23.6707 14.2511 23.9009 14.5956 24.058 14.9747C24.215 15.3539 24.2958 15.7602 24.2958 16.1706C24.2958 16.581 24.215 16.9874 24.058 17.3665C23.9009 17.7457 23.6707 18.0902 23.3805 18.3803C23.0904 18.6705 22.7459 18.9007 22.3667 19.0577C21.9876 19.2148 21.5812 19.2956 21.1708 19.2956C20.342 19.2956 19.5472 18.9664 18.9611 18.3803C18.3751 17.7943 18.0458 16.9994 18.0458 16.1706C18.0458 15.3418 18.3751 14.547 18.9611 13.9609C19.5472 13.3749 20.342 13.0456 21.1708 13.0456Z" fill="#181818"/>
+          </svg>
+
+          <div class="single-feature-title">
+            Live Market Trading
+          </div>
+
+          <div class="single-feature-description">
+            Learn real-time strategies, trade with pros, and get immediate feedback.
+          </div>
+        </div><!-- Single Feature -->
+
+        <div class="single-feature">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32" fill="none">
+            <path d="M2.33203 29.5833H35.6654M2.33203 21.25L10.6654 8.75L18.9987 12.9167L27.332 2.5L35.6654 10.8333" stroke="#181818" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <div class="single-feature-title">
+            Free Indicators
+          </div>
+
+          <div class="single-feature-description">
+            Free tools enhance market analysis, boosting trading precision.
+          </div>
+        </div><!-- Single Feature -->
+
+        <div class="single-feature">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+            <path d="M42.2301 15.1458C44.8343 12.5417 43.6468 9.5 42.2301 8.02083L35.9801 1.77083C33.3551 -0.833339 30.3343 0.354161 28.8551 1.77083L25.3135 5.33333H19.9176C15.9593 5.33333 13.6676 7.41666 12.501 9.8125L3.25097 19.0625V27.3958L1.7718 28.8542C-0.832362 31.4792 0.355138 34.5 1.7718 35.9792L8.0218 42.2292C9.1468 43.3542 10.3551 43.7708 11.501 43.7708C12.9801 43.7708 14.3343 43.0417 15.1468 42.2292L20.7718 36.5833H28.251C31.7926 36.5833 33.5843 34.375 34.2301 32.2083C36.5843 31.5833 37.876 29.7917 38.3968 28.0417C41.626 27.2083 42.8343 24.1458 42.8343 22V15.75H41.6051L42.2301 15.1458ZM38.6676 22C38.6676 22.9375 38.2718 24.0833 36.5843 24.0833H34.501V26.1667C34.501 27.1042 34.1051 28.25 32.4176 28.25H30.3343V30.3333C30.3343 31.2708 29.9385 32.4167 28.251 32.4167H19.0635L12.2301 39.25C11.5843 39.8542 11.2093 39.5 10.9801 39.2708L4.75097 33.0625C4.1468 32.4167 4.50097 32.0417 4.73014 31.8125L7.41764 29.1042V20.7708L11.5843 16.6042V19.9167C11.5843 22.4375 13.251 26.1667 17.8343 26.1667C22.4176 26.1667 24.0843 22.4375 24.0843 19.9167H38.6676V22ZM39.2718 12.1875L35.7301 15.75H19.9176V19.9167C19.9176 20.8542 19.5218 22 17.8343 22C16.1468 22 15.751 20.8542 15.751 19.9167V13.6667C15.751 12.7083 16.1051 9.5 19.9176 9.5H27.0218L31.7718 4.74999C32.4176 4.14583 32.7926 4.49999 33.0218 4.72916L39.251 10.9375C39.8551 11.5833 39.501 11.9583 39.2718 12.1875Z" fill="#181818"/>
+          </svg>
+
+          <div class="single-feature-title">
+            Live Market Assistance
+          </div>
+
+          <div class="single-feature-description">
+            Instant expert support for confident trading in real-time scenarios.
+          </div>
+        </div><!-- Single Feature -->
+      </div>
+
+    </div><!-- Features Section END -->
+
+    <div class="seminar-section">
+      <div class="seminar-container">
+        <div class="seminar-marquee">
+          <ul>
+            <li>UPCOMING SEMINAR</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                <circle cx="3" cy="3" r="3" fill="white"/>
+                </svg>
+            </li>
+            <li>UPCOMING SEMINAR</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                <circle cx="3" cy="3" r="3" fill="white"/>
+                </svg>
+            </li>
+            <li>UPCOMING SEMINAR</li>            
+          </ul>
+          <ul>
+            <li>UPCOMING SEMINAR</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                <circle cx="3" cy="3" r="3" fill="white"/>
+                </svg>
+            </li>
+            <li>UPCOMING SEMINAR</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                <circle cx="3" cy="3" r="3" fill="white"/>
+                </svg>
+            </li>
+            <li>UPCOMING SEMINAR</li>
+            
+          </ul>
+          <ul>
+            <li>UPCOMING SEMINAR</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                <circle cx="3" cy="3" r="3" fill="white"/>
+                </svg>
+            </li>
+            <li>UPCOMING SEMINAR</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                <circle cx="3" cy="3" r="3" fill="white"/>
+                </svg>
+            </li>
+            <li>UPCOMING SEMINAR</li>
+            
+          </ul>
+
+          <ul>
+            <li>UPCOMING SEMINAR</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                <circle cx="3" cy="3" r="3" fill="white"/>
+                </svg>
+            </li>
+            <li>UPCOMING SEMINAR</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                <circle cx="3" cy="3" r="3" fill="white"/>
+                </svg>
+            </li>
+            <li>UPCOMING SEMINAR</li>            
+          </ul>
+
+          <ul>
+            <li>UPCOMING SEMINAR</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                <circle cx="3" cy="3" r="3" fill="white"/>
+                </svg>
+            </li>
+            <li>UPCOMING SEMINAR</li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+                <circle cx="3" cy="3" r="3" fill="white"/>
+                </svg>
+            </li>
+            <li>UPCOMING SEMINAR</li>            
+          </ul>
+        </div>
+
+        <img class="shankys-seminar-logo" src="img/shankys-seminar-logo.png" alt="">
+      
+        <div class="seminar-location-name">GOA</div>
+        <div class="seminar-date">JANUARY 24-25, 2024</div>
+        <div class="animated-button" style="margin-top: 103px;">
+          <a class="animated-button-internal"> Register </a>
+        </div>
+      </div>
+    </div>
+
+<!-- 
+    <div class="final-landing-page">
+      <div class="div">
+        <div class="overlap">
+          <div class="footer-section">
+            <div class="overlap-group">
+              <div class="footer-content">
+                <div class="footer-content-2">
+                  <p class="copy-right-content">©2022 SHANKY’S TRADING. All rights reserved</p>
+                  <div class="footer-widgets">
+                    <div class="footer-widget">
+                      <div class="social-media-icons">
+                        <img class="group" src="img/group-1000002697.png" />
+                        <img class="mask-group" src="img/mask-group.png" />
+                        <img class="img" src="img/group-1000002708.png" />
+                        <img class="mask-group-2" src="img/mask-group-1.png" />
+                        <div class="group-2"></div>
+                      </div>
+                      <div class="footer-links-title">Social Media</div>
+                    </div>
+                    <div class="footer-widget-2">
+                      <div class="footer-links">
+                        <div class="text-wrapper">Terms &amp; Conditions</div>
+                        <div class="text-wrapper-2">Refunds &amp; Cancellation</div>
+                        <div class="text-wrapper-3">Privacy Policy</div>
+                      </div>
+                      <div class="footer-links-title">Information</div>
+                    </div>
+                    <div class="footer-widget-3">
+                      <div class="footer-links-2">
+                        <div class="text-wrapper">Home</div>
+                        <div class="text-wrapper-2">About Us</div>
+                        <div class="text-wrapper-3">Pricing</div>
+                        <div class="text-wrapper-4">Blogs</div>
+                        <div class="text-wrapper-5">Contact Us</div>
+                      </div>
+                      <div class="footer-links-title">Company</div>
+                    </div>
+                    <div class="footer-widget-4">
+                      <div class="footer-cta-button">
+                        <button class="button">
+                          <div class="text-wrapper-6">Join the Membership</div>
+                          <img class="vector" src="img/vector.svg" />
+                        </button>
+                      </div>
+                      <div class="footer-section-title">
+                        <img class="vector-2" src="img/vector-1.svg" />
+                        <p class="where-profit-meets">
+                          <span class="span">Where Profit<br />Meets </span>
+                          <span class="text-wrapper-7">Possibilities</span>
+                        </p>
+                      </div>
+                      <img class="footer-logo" src="img/footer-logo.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-background"><img class="union" src="img/union.svg" /></div>
+              <div class="footer-background-2"></div>
+            </div>
+          </div>
+          <div class="contact-us-section">
+            <div class="overlap-2">
+              <img class="group-3" src="img/group-1000002600-1.png" />
+              <div class="overlap-group-wrapper">
+                <div class="group-wrapper">
+                  <div class="group-4">
+                    <div class="group-5">
+                      <p class="get-in-touch-reach">
+                        Get in Touch: Reach Out to Us for Questions, Collaborations, or Support. We&#39;re Here to
+                        Assist You!
+                      </p>
+                      <div class="text-wrapper-8">Contact US</div>
+                    </div>
+                    <div class="group-6">
+                      <button class="button-2">
+                        <div class="text-wrapper-9">Join the Membership</div>
+                        <img class="vector" src="img/vector-3.svg" />
+                      </button>
+                      <button class="button-3">
+                        <div class="text-wrapper-9">Contact Us</div>
+                        <img class="vector" src="img/vector-3.svg" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img class="group-7" src="img/group-1000002600-1.png" />
+            </div>
+          </div>
+        </div>
+        <div class="faqs-section">
+          <button class="button-4">
+            <div class="text-wrapper-9">View More FAQ’s</div>
+            <img class="vector" src="img/vector-4.svg" />
+          </button>
+          <div class="group-8">
+            <div class="group-9">
+              <p class="text-wrapper-10">What can I expect in the trading room?</p>
+              <div class="text-wrapper-11">+</div>
+            </div>
+            <div class="group-10">
+              <p class="text-wrapper-10">Shanky’s trading programs are suitable for whom?</p>
+              <div class="text-wrapper-11">+</div>
+            </div>
+            <img class="accordian-divider" src="img/accordian-divider-2.svg" />
+            <img class="accordian-divider-2" src="img/accordian-divider-2.svg" />
+            <img class="accordian-divider-3" src="img/accordian-divider-2.svg" />
+            <p class="accordian-topic">
+              Shanky&#39;s Trading is an online educational platform for stock market trading, currently maintained on
+              Discord. The pre-recorded learning videos are posted on YouTube and daily live sessions are conducted on
+              same.
+            </p>
+            <div class="accordian-topic-2">What is Shankys Trading?</div>
+          </div>
+          <div class="faq-section-title">
+            <div class="overlap-group-2">
+              <img class="vector-3" src="img/vector-5.svg" />
+              <p class="checkout-recent-FAQ">
+                <span class="text-wrapper-12">Checkout recent FAQ</span>
+                <span class="text-wrapper-13">’</span>
+                <span class="text-wrapper-12">s</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accomplishments">
+          <div class="overlap-3">
+            <div class="rectangle"></div>
+            <div class="img-wrapper"><img class="group-11" src="img/group-1000002691.png" /></div>
+            <div class="group-12">
+              <div class="accomplishments-2">
+                <div class="accomplishment">
+                  <div class="overlap-group-3">
+                    <button class="button-5">
+                      <div class="text-wrapper-14">Join the Membership</div>
+                      <img class="vector" src="img/vector-7.svg" />
+                    </button>
+                    <p class="p">
+                      17+ city seminars empowered with trading insights, fueling ongoing finance impact through
+                      education.
+                    </p>
+                    <div class="text-wrapper-15">Seminar, 17+ cities</div>
+                    <img class="fluent-emoji-flat" src="img/fluent-emoji-flat-trophy.svg" />
+                  </div>
+                </div>
+                <div class="overlap-wrapper">
+                  <div class="overlap-group-3">
+                    <button class="button-5">
+                      <div class="text-wrapper-14">Go to Channel</div>
+                      <img class="vector" src="img/vector-7.svg" />
+                    </button>
+                    <p class="text-wrapper-16">
+                      500K YouTube subs showcase our dedication. Join for deep trading insights and timely updates.
+                    </p>
+                    <div class="text-wrapper-15">YouTube</div>
+                    <img class="logos-youtube" src="img/logos-youtube.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="div-wrapper">
+                <div class="overlap-4">
+                  <img class="vector-4" src="img/vector-8.svg" />
+                  <p class="text-wrapper-17">Here are a few of our accomplishments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-section">
+          <div class="right-section">
+            <div class="overlap-group-4">
+              <img class="right-image" src="img/right-image.png" />
+              <img class="left-image" src="img/left-image.png" />
+              <div class="fading-down"></div>
+              <div class="fading-up"></div>
+            </div>
+          </div>
+          <div class="left-section">
+            <div class="carousel-buttons">
+              <div class="ellipse"></div>
+              <div class="ellipse-2"></div>
+              <div class="ellipse-3"></div>
+              <div class="ellipse-4"></div>
+              <div class="ellipse-5"></div>
+            </div>
+            <div class="testimonial-content">
+              <div class="user-details">
+                <div class="group-13">
+                  <div class="users-designation">ENTREPRENEUR &amp; CONTENT CREATOR</div>
+                  <div class="users-name">Akshat Shrivastava</div>
+                </div>
+                <img class="user-image" src="img/user-image.png" />
+              </div>
+              <p class="user-testimonial">
+                I am very happy with the course and look forward to continue learning the subject. Five stars well
+                deserved.
+              </p>
+            </div>
+            <div class="testimonial-sub">
+              <div class="overlap-group-5">
+                <img class="vector-5" src="img/vector-9.svg" />
+                <p class="text-wrapper-18">WHAT PEOPLE THINK ABOUT US</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shankys-seminar">
+          <div class="overlap-5">
+            <div class="rectangle-2"></div>
+            <img class="mask-group-3" src="img/mask-group-4.png" />
+            <button class="register-button">
+              <div class="overlap-6">
+                <div class="group-14">
+                  <div class="overlap-group-6">
+                    <div class="rectangle-3"></div>
+                    <div class="rectangle-4"></div>
+                  </div>
+                </div>
+                <div class="text-wrapper-19">Register</div>
+              </div>
+            </button>
+            <div class="shankys-seminar-2">
+              <img class="shankys-seminar-logo" src="img/shankys-seminar-logo.png" />
+              <div class="overlap-7">
+                <div class="seminar-location">GOA</div>
+                <div class="seminar-location-2">GOA</div>
+                <img class="seminar-date-after" src="img/seminar-date-before.svg" />
+                <div class="seminar-date">JANUARY 24-25, 2024</div>
+                <img class="seminar-date-before" src="img/seminar-date-before.svg" />
+              </div>
+            </div>
+            <div class="seminar-marque">
+              <div class="ellipse-6"></div>
+              <div class="ellipse-7"></div>
+              <div class="ellipse-8"></div>
+              <div class="ellipse-9"></div>
+              <div class="text-wrapper-20">UPCOMING SEMINAR</div>
+              <div class="text-wrapper-21">UPCOMING SEMINAR</div>
+              <div class="text-wrapper-22">UPCOMING SEMINAR</div>
+              <div class="text-wrapper-23">UPCOMING SEMINAR</div>
+              <div class="text-wrapper-24">UPCOMING SEMINAR</div>
+            </div>
+          </div>
+        </div>
+        <div class="key-features-section">
+          <div class="key-features">
+            <div class="feature">
+              <div class="group-15">
+                <div class="text-wrapper-10">Live Market Assistance</div>
+                <p class="text-wrapper-25">Instant expert support for confident trading in real-time scenarios.</p>
+              </div>
+              <img class="vector-6" src="img/vector-10.svg" />
+            </div>
+            <div class="feature-2">
+              <div class="group-15">
+                <div class="text-wrapper-10">Free Indicators</div>
+                <p class="text-wrapper-25">Free tools enhance market analysis, boosting trading precision.</p>
+              </div>
+              <img class="group-16" src="img/group-1000002651.png" />
+            </div>
+            <div class="feature-3">
+              <div class="group-15">
+                <div class="text-wrapper-10">Live Market Trading</div>
+                <p class="text-wrapper-25">Learn real-time strategies, trade with pros, and get immediate feedback.</p>
+              </div>
+              <img class="vector-7" src="img/vector-11.svg" />
+            </div>
+            <div class="feature-4">
+              <div class="group-15">
+                <div class="text-wrapper-10">Recording Videos</div>
+                <p class="text-wrapper-25">Watch videos to master trading techniques at your pace, anywhere.</p>
+              </div>
+              <img class="group-17" src="img/group.png" />
+            </div>
+            <div class="feature-5">
+              <div class="group-18">
+                <div class="text-wrapper-10">Live Classes</div>
+                <p class="attend-live-sessions">
+                  Attend live sessions for mastering trading<br />with interactive learning and Q&amp;A.
+                </p>
+              </div>
+              <img class="group-19" src="img/group-1.png" />
+            </div>
+            <div class="feature-6">
+              <div class="overlap-group-7">
+                <div class="group-20">
+                  <div class="group-21">
+                    <div class="text-wrapper-26">Discord Access</div>
+                    <p class="text-wrapper-27">
+                      Exclusive trading Discord: real-time insights, strategies, and connections.
+                    </p>
+                  </div>
+                </div>
+                <img class="group-22" src="img/group-2.png" />
+              </div>
+            </div>
+          </div>
+          <div class="key-features-section-2">
+            <div class="overlap-4">
+              <img class="vector-4" src="img/vector-12.svg" />
+              <p class="text-wrapper-17">Key Features of the Membership</p>
+            </div>
+          </div>
+        </div>
+        <div class="plan-section">
+          <div class="plans-container">
+            <div class="plan-featured">
+              <div class="overlap-8">
+                <div class="most-popular-tag">
+                  <div class="most-popular-wrapper"><div class="most-popular">MOST POPULAR</div></div>
+                </div>
+                <div class="plan-border"></div>
+                <button class="button-6">
+                  <div class="text-wrapper-28">Get Started</div>
+                  <img class="vector" src="img/vector-13.svg" />
+                </button>
+                <p class="plan-list">
+                  All including Bulb+<br />Bulb + Fire Indicators<br />Discord Live + Spl Zoom Webinar<br />Jailbar +
+                  White Panther<br />Weekly Zoom Special Webinar
+                </p>
+                <img class="plan-divider" src="img/plan-divider-2.svg" />
+                <div class="plan-price">
+                  <div class="text-wrapper-29">/ per month</div>
+                  <img class="image" src="img/image.svg" />
+                  <div class="text-wrapper-30">1699</div>
+                </div>
+                <p class="plan-description">
+                  For growing teams building apps &amp; internal<br />tools to streamline workflows.
+                </p>
+                <div class="plan-name">Premium</div>
+              </div>
+            </div>
+            <div class="plan">
+              <div class="overlap-9">
+                <button class="button-7">
+                  <div class="text-wrapper-31">Get Started</div>
+                  <img class="vector" src="img/vector-15.svg" />
+                </button>
+                <p class="plan-list-2">
+                  All including Bulb+<br />Bulb + Fire Indicators<br />Discord Live + Spl Zoom Webinar<br />Jailbar +
+                  White Panther<br />Weekly Zoom Special Webinar
+                </p>
+                <img class="plan-divider-2" src="img/plan-divider-2.svg" />
+                <div class="plan-price-2">
+                  <div class="text-wrapper-32">/ per month</div>
+                  <img class="image-2" src="img/2.svg" />
+                  <div class="text-wrapper-33">699</div>
+                </div>
+                <p class="plan-description-2">
+                  For growing teams building apps &amp; internal<br />tools to streamline workflows.
+                </p>
+                <div class="plan-name-2">Free</div>
+              </div>
+            </div>
+            <div class="plan-2">
+              <div class="overlap-9">
+                <button class="button-7">
+                  <div class="text-wrapper-31">Get Started</div>
+                  <img class="vector" src="img/vector-15.svg" />
+                </button>
+                <p class="plan-list-2">
+                  All including Bulb+<br />Bulb + Fire Indicators<br />Discord Live + Spl Zoom Webinar<br />Jailbar +
+                  White Panther<br />Weekly Zoom Special Webinar
+                </p>
+                <img class="plan-divider-2" src="img/plan-divider-2.svg" />
+                <div class="plan-price-3">
+                  <div class="text-wrapper-34">/ per month</div>
+                  <img class="image-2" src="img/2.svg" />
+                  <div class="text-wrapper-33">0</div>
+                </div>
+                <p class="plan-description-2">
+                  For growing teams building apps &amp; internal<br />tools to streamline workflows.
+                </p>
+                <div class="plan-name-2">Free</div>
+              </div>
+            </div>
+          </div>
+          <div class="anual-plan-pitch">
+            <div class="overlap-10">
+              <div class="anual-plan-pitch-2"></div>
+              <p class="annually-you-have-up">
+                <span class="text-wrapper-35">Annually you have up to </span>
+                <span class="text-wrapper-36">75% off, and free Indicators 😍</span>
+              </p>
+            </div>
+          </div>
+          <div class="overlap-11">
+            <div class="plan-switcher">
+              <img class="vector-8" src="img/vector-16.svg" />
+              <div class="overlap-12">
+                <div class="active-plan-button">
+                  <div class="overlap-group-8"><div class="text-wrapper-37">Monthly</div></div>
+                </div>
+                <div class="inactive-plan-button">Annually</div>
+              </div>
+            </div>
+            <div class="plan-section-title">
+              <div class="overlap-13">
+                <img class="vector-9" src="img/vector-17.svg" />
+                <div class="section-title">Ready to get started</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlap-14">
+          <div class="services-section">
+            <div class="overlap-15">
+              <div class="service-background"></div>
+              <div class="service-box-double">
+                <div class="overlap-group-9">
+                  <div class="group-23">
+                    <img class="ellipse-10" src="img/ellipse-71.png" />
+                    <img class="ellipse-11" src="img/ellipse-73.png" />
+                    <img class="ellipse-12" src="img/ellipse-74.png" />
+                    <img class="ellipse-13" src="img/ellipse-75.png" />
+                    <img class="ellipse-14" src="img/ellipse-76.png" />
+                    <img class="ellipse-15" src="img/ellipse-77.png" />
+                    <img class="ellipse-16" src="img/ellipse-78.png" />
+                    <img class="ellipse-17" src="img/ellipse-79.png" />
+                    <img class="ellipse-18" src="img/ellipse-80.png" />
+                    
+                    <div class="group-24">
+                      <img class="ellipse-10" src="img/ellipse-71-1.png" />
+                      <img class="ellipse-11" src="img/ellipse-73-1.png" />
+                      <img class="ellipse-12" src="img/ellipse-74-1.png" />
+                      <img class="ellipse-13" src="img/ellipse-75-1.png" />
+                      <img class="ellipse-14" src="img/ellipse-76-1.png" />
+                      <img class="ellipse-15" src="img/ellipse-77-1.png" />
+                      <img class="ellipse-16" src="img/ellipse-78-1.png" />
+                      <img class="ellipse-17" src="img/ellipse-79-1.png" />
+                      <img class="ellipse-18" src="img/ellipse-80-1.png" />
+                    </div>
+                    
+                  </div>
+                  <div class="group-25">
+                    <div class="rectangle-5"></div>
+                    <div class="rectangle-6"></div>
+                  </div>
+                  <p class="element-students-trust">
+                    <span class="text-wrapper-38">5000+</span>
+                    <span class="text-wrapper-39">
+                      students trust Shanky Trading for stock market, option trading and more...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="service-box">
+                <div class="overlap-16">
+                  <div class="text-wrapper-40">Strategy for Profit Trading</div>
+                  <p class="text-wrapper-41">
+                    Optimize trades, develop a robust strategy for profitable trading success.
+                  </p>
+                  <div class="overlap-group-10"><img class="currency-icon" src="img/currency-icon-1.png" /></div>
+                </div>
+              </div>
+            </div>
+            <div class="services-section-wrapper">
+              <div class="services-section-2">
+                <div class="overlap-17">
+                  <img class="vector-10" src="img/vector-18.svg" />
+                  <p class="text-wrapper-42">What you will Learn on the Membership</p>
+                </div>
+              </div>
+            </div>
+            <div class="service-box-2">
+              <div class="overlap-16">
+                <div class="text-wrapper-40">Option Trading</div>
+                <p class="text-wrapper-41">Master option basics and key strategies for confident trading.</p>
+                <div class="overlap-group-10"><img class="commody-icon" src="img/commody-icon-1.png" /></div>
+              </div>
+            </div>
+            <div class="service-box-3">
+              <div class="overlap-16">
+                <div class="text-wrapper-40">Technicals of Option</div>
+                <p class="text-wrapper-41">
+                  Explore basics, Greeks, volatility, and strategies for successful trading.
+                </p>
+                <div class="overlap-group-11">
+                  <div class="rectangle-7"></div>
+                  <img class="future-opt-icon" src="img/future-opt-icon-1.png" />
+                </div>
+              </div>
+            </div>
+            <div class="service-box-4">
+              <div class="overlap-16">
+                <div class="text-wrapper-40">Basis of Stock Market</div>
+                <p class="text-wrapper-41">
+                  Master stock market basics: terms and key principles for a solid foundation.
+                </p>
+                <div class="overlap-group-12">
+                  <div class="rectangle-8"></div>
+                  <img class="multi-funds-icon" src="img/multi-funds-icon-1.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-section">
+            <div class="overlap-18">
+              <div class="shanky-image">
+                <div class="overlap-group-13">
+                  <img class="removebg" src="img/dsc1802-removebg-3.png" />
+                  <img class="removebg" src="img/dsc1802-removebg-3.png" />
+                </div>
+              </div>
+              <div class="hero-left-section">
+                <div class="hero-left-section-2">
+                  <div class="group-26">
+                    <div class="group-27">
+                      <div class="overlap-group-14">
+                        <img class="ellipse-19" src="img/ellipse-2.png" />
+                        <img class="ellipse-20" src="img/ellipse-3.png" />
+                        <img class="ellipse-21" src="img/ellipse-4.png" />
+                        <img class="ellipse-22" src="img/ellipse-5.png" />
+                      </div>
+                    </div>
+                    <div class="div-hero-learners">
+                      <div class="text-wrapper-43">1500+</div>
+                      <div class="text-wrapper-44">Happy Learners</div>
+                    </div>
+                  </div>
+                  <img class="SVG" src="img/svg.svg" />
+                  <div class="div-hero-reviews-wrapper">
+                    <div class="div-hero-reviews">
+                      <div class="div-heading-style">
+                        <div class="overlap-group-15">
+                          <div class="element">4.8+</div>
+                          <div class="text-wrapper-45">(563 Ratings)</div>
+                        </div>
+                      </div>
+                      <img class="img-2" src="img/645636d22beb50aa8da7dfe5-stars-png.png" />
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-left-section-3">
+                  <div class="hero-left-section-4">
+                    <div class="overlap-group-6">
+                      <div class="rectangle-9"></div>
+                      <div class="rectangle-10"></div>
+                      <div class="text-wrapper-46">Join The Membership</div>
+                    </div>
+                  </div>
+                  <div class="hero-left-section-5">
+                    <p class="subtitle">
+                      Achieve your financial dreams by learning basic to advanced<br />strategies and tips from expert
+                      trader.
+                    </p>
+                    <div class="title">Where Profit<br />Meets Possibilities</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
