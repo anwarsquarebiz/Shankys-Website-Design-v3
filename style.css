@@ -4218,7 +4218,7 @@
 }
 
 .seminar-date {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: var(--bratannic-bold);
   font-size: 28px;
@@ -4261,3 +4261,77 @@
   }
 }
 /* Seminar Section END */
+
+.testimonial-section {
+  margin-top: 120px;
+  padding: 0 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+}
+
+.testimonial-subtitle {
+  color: #de1f54;
+  font-family: var(--phonk-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.testimonial-subtitle-svg {
+  position: relative;
+  top: -8px;
+  z-index: -1;
+} 
+
+.single-testimonial-content {
+  margin-top: 58.72px;
+  color: #181818;
+  font-family: var(--gilroy-semibold-font);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 138.462% */
+}
+
+.testimonial-user-profile {
+  margin-top: 26.04px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-photo {
+  width: 99px;
+  height: 99px;
+}
+
+.users-name {
+  color: #181818;
+  font-family: var(--gilroy-bold-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.users-designation {
+  color: #181818;
+font-family: var(--gilroy-bold-font);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.testimonial-scrolls {
+  width: 50%;
+}
