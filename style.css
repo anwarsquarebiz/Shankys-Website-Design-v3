@@ -4991,7 +4991,7 @@ input[type="checkbox"]:checked + .accordion-title {
   }
 
   .accordian-section-title-vector {
-    width: 192.856px;
+    max-width: 192.856px;
     position: relative;
     top: -15px;
     rotate: 3deg;
