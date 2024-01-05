@@ -4262,6 +4262,8 @@
 }
 /* Seminar Section END */
 
+/* Testimonial Section START */
+
 .testimonial-section {
   margin-top: 120px;
   padding: 0 150px;
@@ -4530,10 +4532,10 @@
     line-height: normal;
   }
 
-  .testimonial-scrolls {    
+  .testimonial-scrolls {
     width: 100%;
     margin-top: 30px;
-    margin-bottom: 30px;  
+    margin-bottom: 30px;
   }
 
   .scroll-container {
@@ -4660,3 +4662,190 @@
     animation: 8s slide-down infinite linear;
   }
 }
+
+/* Testimonial Section END */
+
+/* Accomplishment Section START */
+
+.accomplishments-section {
+  background-image: url("img/accomplishments-section-background.png");
+  background-color: #ffe2e2;
+  width: 100%;
+  height: fit-content;
+  flex-shrink: 0;
+  padding: 150px 0;
+}
+
+.accomplishments-section-title {
+  z-index: 2;
+  color: #000;
+  text-align: center;
+  font-family: var(--phonk-font);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 150% */
+}
+
+.accomplishments-title-vector {
+  position: relative;
+  z-index: 1;
+  top: -30px;
+  left: 100px;
+  color: #000;
+  text-align: center;
+  font-family: var(--phonk-font);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 150% */
+}
+
+.accomplishments {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.accomplishment {
+  padding: 47px 40px 40px 40px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  max-width: 600px;
+}
+
+.accomplishment-name {
+  color: #181818;
+  font-family: var(--gilroy-bold-font);
+  margin-top: 47px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.accomplishment-details {
+  margin-top: 15px;
+  color: #5e5e5e;
+  font-family: var(--gilroy-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+.accomplishment-link {
+  cursor: pointer;
+  margin-top: 41px;
+  display: inline-flex;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 4px;
+  border: 1px solid #181818;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 2px 4px 9px 1px rgba(0, 0, 0, 0.05);
+  color: #181818;
+  text-align: center;
+  font-family: var(--sora-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px; /* 93.333% */
+
+  width: max-content;
+}
+
+@media screen and (max-width: 768px) {
+
+  .accomplishments-section {
+    background: none;
+    padding: 80px 25px;
+  }
+
+  .accomplishments-section-title {
+    font-size: 22px;
+    line-height: normal;
+  }
+
+  .accomplishments-title-vector {
+    width: 192.856px;
+    top: -15px;
+    left: 35px;
+  }
+
+  .accomplishments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .accomplishment {
+    padding: 25px 20px 20px 20px;
+    border-radius: 10px;
+    background: #FFE2E2;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    max-width: 600px;
+  }
+
+  .accomplishment-logo {
+    height: 30px;
+  }
+
+  .accomplishment-name {
+    margin-top: 14px;
+    color: #181818;
+    font-family: var(--gilroy-semibold-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .accomplishment-details {
+    margin-top: 5px;
+    color: #5e5e5e;
+    font-family: var(--gilroy-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+
+  .accomplishment-link {
+    cursor: pointer;
+
+    margin-top: 25px;
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 10px;
+    background: #de1f54;
+    border: 1px solid #de1f54;
+    box-shadow: none;
+
+    color: #fff;
+    text-align: center;
+    font-family: Sora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 200% */
+
+    width: 100%;
+  }
+}
+
+/* Accomplishment Section END */
