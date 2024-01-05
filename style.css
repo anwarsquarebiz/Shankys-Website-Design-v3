@@ -4290,7 +4290,7 @@
   position: relative;
   top: -8px;
   z-index: -1;
-} 
+}
 
 .single-testimonial-content {
   margin-top: 58.72px;
@@ -4325,13 +4325,137 @@
 
 .users-designation {
   color: #181818;
-font-family: var(--gilroy-bold-font);
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-family: var(--gilroy-bold-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .testimonial-scrolls {
   width: 50%;
+}
+
+.scrolls {
+  background: #f8f9f9;
+  height: 816px;
+  padding: 0 10px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-scrolls:before,
+.testimonial-scrolls:after {
+  width: 200px;
+  height: 158.046px;
+  content: "";
+  z-index: 2;
+}
+
+.testimonial-scrolls::before {
+  /* background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%); */
+  background: red;
+}
+
+.testimonial-scrolls::after {
+  /* background: linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0) 100%); */
+  background: red;
+}
+
+.single-post {
+  max-width: 347.73px;
+  padding: 30px;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 10px;
+}
+
+.single-post .content {
+  color: #5e5e5e;
+  font-family: var(--gilroy-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 136.364% */
+}
+
+.single-post .user-photo {
+  width: 50px;
+height: 50px;
+flex-shrink: 0;
+}
+
+.single-post .testimonials-users-name {
+  color: #000;
+  font-family: var(--gilroy-bold-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 136.364% */
+}
+
+.single-post .users-id {
+  color: #000;
+  font-family: var(--gilroy-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 136.364% */
+}
+
+.fading-up {
+  z-index: 1;
+  top: 158px;
+  position: relative;
+  width: 100%;
+  height: 158px;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.fading-down {
+  transform: rotate(-180deg);
+  position: relative;
+  top: -158px;
+  width: 100%;
+  height: 158px;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.scroll-1 {
+  animation: 8s slide-up infinite linear;
+}
+
+.scroll-2 {
+  animation: 8s slide-down infinite linear;
 }
