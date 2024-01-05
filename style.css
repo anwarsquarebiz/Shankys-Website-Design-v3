@@ -4536,6 +4536,11 @@
     margin-bottom: 30px;  
   }
 
+  .scroll-container {
+    display: flex;
+    gap: 30px;
+  }
+
   .scrolls {
     background: #f8f9f9;
     height: fit-content;
@@ -4545,8 +4550,6 @@
     flex-direction: column;
     justify-content: center;
     gap: 5px;
-
-
   }
 
   .scroll-1 {
