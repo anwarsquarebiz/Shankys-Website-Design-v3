@@ -1,3 +1,12 @@
+console.clear();
+
+function toggleMobileNav() {
+  var menu = document.getElementById("navlinks-mobile");
+  menu.style.display = (menu.style.display === "none") ? "block" : "none";
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
   // Function to handle the intersection changes
   function handleIntersection(entries, observer) {
