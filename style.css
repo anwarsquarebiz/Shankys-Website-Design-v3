@@ -5333,8 +5333,76 @@ input[type="checkbox"]:checked + .accordion-title {
   height: 40px;
 }
 
-@media screen and (max-width: 768px) { 
+.footer-section-mobile {
+  display: none;
+}
 
+@media screen and (max-width: 768px) {
+  .footer-section {
+    display: none;
+  }
+
+  .footer-section-mobile {
+    margin-top: 80px;
+    width: 100%;
+    background: #111113;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .links-container-mobile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .footer-links-title {
+    color: #fff;
+    font-family: var(--gilroy-semibold-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
+  .links-container-mobile .links {
+    color: #fff;
+    opacity: 0.6;
+    font-family: var(--gilroy-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+
+  .widget-links {
+    gap: 10px;
+  }
+
+  .social-media-icons {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .social-link {
+    width: 40px;
+    height: 40px;
+  }
 
 
 }
