@@ -5182,6 +5182,52 @@ input[type="checkbox"]:checked + .accordion-title {
   line-height: 20px; /* 111.111% */
 }
 
+@media screen and (max-width: 768px) {
+  .contact-us-section {
+    margin-top: 86px;
+    padding: 0 25px;
+  }
+
+  .contact-us-container {
+    background-image: url("img/contact-us-mobile.png");
+    background-size: cover;
+    padding: 50px;
+  }
+
+  .contact-us-title {
+    font-size: 22px;
+  }
+
+  .contact-us-text {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px; /* 142.857% */
+  }
+
+  .contact-us-link {
+    margin-top: 30px;
+
+    display: flex;
+    width: fit-content;
+    padding: 6px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    border: none;
+    background: #181818;
+
+    color: #fff;
+    text-align: center;
+    font-family: Sora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 233.333% */
+  }
+}
+
 /* Contact Us Section END */
 
 /* Footer Section START */
@@ -5276,6 +5322,7 @@ input[type="checkbox"]:checked + .accordion-title {
 }
 
 .social-media-icons {
+  margin-top: 25px;
   display: flex;
   flex-direction: row;
   gap: 25px;
@@ -5284,6 +5331,12 @@ input[type="checkbox"]:checked + .accordion-title {
 .social-link {
   width: 40px;
   height: 40px;
+}
+
+@media screen and (max-width: 768px) { 
+
+
+
 }
 
 /* Footer Section END */
