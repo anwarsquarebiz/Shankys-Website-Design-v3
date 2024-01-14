@@ -3184,7 +3184,7 @@
   font-style: normal;
   font-weight: 500;
   background: #000;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   line-height: 30px; /* 150% */
   transition: top 0.2s ease-in-out, left 0.2s ease-in-out; /* Add a transition for top and left properties */
 }
@@ -3192,6 +3192,7 @@
 .animated-button a:hover {
   top: -1px;
   left: -1px;
+  border: 2px solid #fff;
 }
 
 .hero-left-section-bottom {
@@ -3610,7 +3611,7 @@
 
 .logos-slide-top {
   display: inline-block;
-  animation: 10s slide-top infinite linear;
+  animation: 20s slide-top infinite linear;
 }
 
 .logos-slide-top img {
@@ -3624,7 +3625,7 @@
 
 .logos-slide-bottom {
   display: inline-block;
-  animation: 10s slide-bottom infinite linear;
+  animation: 20s slide-bottom infinite linear;
 }
 
 .logos-slide-bottom img {
@@ -4465,11 +4466,11 @@
 }
 
 .scroll-1 {
-  animation: 8s slide-up infinite linear;
+  animation: 20s slide-up infinite linear;
 }
 
 .scroll-2 {
-  animation: 8s slide-down infinite linear;
+  animation: 20s slide-down infinite linear;
 }
 
 @media screen and (max-width: 768px) {
