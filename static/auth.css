@@ -1,0 +1,233 @@
+:root {
+  --poppins-font: "Poppins", Helvetica;
+  --gilroy-font: "Gilroy-Medium-☞", Helvetica;
+  --gilroy-semibold-font: "Gilroy-SemiBold-☞", Helvetica;
+  --gilroy-bold-font: "Gilroy-Bold-☞", Helvetica;
+  --raleway-font: "Raleway", Helvetica;
+  --phonk-font: "Phonk-RegularDEMO", Helvetica;
+  --sora-font: "Sora", Helvetica;
+  --bratannic-bold: "Britannic Bold-Regular", Helvetica;
+}
+
+.login-page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.background-image {
+  width: 1012px;
+  height: 100vh;
+  background-image: url("/static/img/auth-backgroud-image.png");
+  background-size: cover;
+  background-position: top right;
+}
+
+.form-content {
+  width: 909px;
+  padding: 134px 150px;
+  max-height: 100vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.form-content::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.title-container {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-title {
+  color: #000;
+  font-family: var(--phonk-font);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-stroke-login {
+  position: relative;
+  z-index: -1;
+  top: -13px;
+  right: -200px;
+}
+
+.title-stroke-sign-up {
+  position: relative;
+  z-index: -1;
+  top: -13px;
+  right: -300px;
+}
+
+.form-container {
+  max-width: 537px;
+}
+
+.form-container .form-input-label {
+  color: #181818;
+  font-family: var(--gilroy-semibold-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 166.667% */
+}
+
+.form-container .form-input {
+  border-radius: 10px;
+  border: 1px solid #000;
+  opacity: 0.5;
+  background: #fff;
+
+  padding: 15px 20px;
+
+  color: #181818;
+
+  width: 100%;
+
+  font-family: var(--gilroy-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 166.667% */
+
+  margin-bottom: 30px;
+}
+
+.form-container .form-bottom-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.form-container .form-check-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-container .check-box {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  background: #de1f54;
+}
+
+.form-container .check-box-label {
+  color: #181818;
+
+  font-family: var(--gilroy-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 180% */
+}
+
+.form-container .forget-password-link {
+  color: #4318ff;
+
+  font-family: var(--gilroy-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 180% */
+}
+
+.form-container .submit-button {
+  height: 64px;
+  width: 100%;
+  border-radius: 10px;
+  background: #de1f54;
+  border: #de1f54;
+
+  color: #fff;
+
+  font-family: var(--gilroy-bold-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 166.667% */
+}
+
+.form-container .form-footer-link {
+  margin-top: 30px;
+  color: #181818;
+  font-family: var(--gilroy-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 130% */
+  letter-spacing: -0.4px;
+}
+
+.form-container .sign-up-link {
+  color: var(--primary-purple-blue-500-primary-color, #4318ff);
+  font-family: var(--gilroy-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+}
+
+@media screen and (max-width: 768px) {
+  .background-image {
+    display: none;
+  }
+
+  .form-content {
+    width: 100%;
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    color: #000;
+    font-family: var(--phonk-font);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-stroke-sign-up {
+    width: 200px;
+    right: -150px;
+  }
+
+  .title-stroke-login {
+    width: 200px;
+    right: -100px;
+  }
+}
