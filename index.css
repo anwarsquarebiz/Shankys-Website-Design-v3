@@ -889,6 +889,7 @@
 }
 
 .plan-link-simple {
+  cursor: pointer;
   display: flex;
   width: 100%;
   align-self: center;
@@ -906,9 +907,39 @@
   font-weight: 400;
   line-height: 28px; /* 155.556% */
   margin-top: 76px;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-link-simple::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.plan-link-simple:hover::after {
+  opacity: 1;
+  animation: shine 1.5s forwards;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 .plan-link-special {
+  cursor: pointer;
   display: flex;
   width: 100%;
   align-self: center;
@@ -926,7 +957,37 @@
   line-height: 28px; /* 155.556% */
   margin-top: 76px;
   background: #de1f54;
+  position: relative;
+  overflow: hidden;
 }
+
+.plan-link-special::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.plan-link-special:hover::after {
+  opacity: 1;
+  animation: shine-special 1s forwards; /* Removed 'infinite' */
+}
+
+@keyframes shine-special {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .pricing-section-title {
@@ -1415,6 +1476,8 @@
 
 .testimonial-scrolls {
   width: 50%;
+  margin-top: -158px;
+  margin-bottom: -158px;
 }
 
 .scrolls {
@@ -1488,10 +1551,10 @@
   line-height: 30px; /* 136.364% */
 }
 
-.fading-up {
+.testimonial-scrolls .fading-up {
   z-index: 1;
-  top: 0;
-  position: absolute;
+  top: 158px;
+  position: relative;
   width: 100%;
   height: 158px;
   left: 0;
@@ -1502,10 +1565,10 @@
   );
 }
 
-.fading-down {
+.testimonial-scrolls .fading-down {
   transform: rotate(-180deg);
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 158px;
   width: 100%;
   height: 158px;
   left: 0;
@@ -1687,6 +1750,7 @@
     line-height: 30px; /* 136.364% */
   }
 
+  /* Mobile version */
   .fading-up {
     z-index: 1;
     top: 158px;
@@ -1701,6 +1765,7 @@
     );
   }
 
+  /* Mobile version */
   .fading-down {
     transform: rotate(-180deg);
     position: relative;
@@ -1825,7 +1890,6 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-
   border-radius: 4px;
   border: 1px solid #181818;
   background: rgba(255, 255, 255, 0);
@@ -1837,9 +1901,38 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16.8px; /* 93.333% */
-
   width: max-content;
+  position: relative;
+  overflow: hidden;
 }
+
+.accomplishment-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.accomplishment-link:hover::after {
+  opacity: 1;
+  animation: shine-accomplishment 1s forwards; /* Removed 'infinite' */
+}
+
+@keyframes shine-accomplishment {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .accomplishments-section {
@@ -2037,7 +2130,6 @@ input[type="checkbox"]:checked + .accordion-title {
 .more-faqs-button {
   margin-top: 40px;
   cursor: pointer;
-
   display: inline-flex;
   padding: 16px 20px;
   justify-content: center;
@@ -2045,9 +2137,7 @@ input[type="checkbox"]:checked + .accordion-title {
   gap: 10px;
   border-radius: 4px;
   background: #000;
-
   box-shadow: 2px 4px 9px 1px rgba(0, 0, 0, 0.05);
-
   color: #fff;
   text-align: center;
   font-family: var(--gilroy-font);
@@ -2055,7 +2145,37 @@ input[type="checkbox"]:checked + .accordion-title {
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 111.111% */
+  position: relative;
+  overflow: hidden;
 }
+
+.more-faqs-button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.more-faqs-button:hover::after {
+  opacity: 1;
+  animation: shine-more-faqs 1s forwards; /* Removed 'infinite' */
+}
+
+@keyframes shine-more-faqs {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .accordian-section {
@@ -2206,18 +2326,15 @@ input[type="checkbox"]:checked + .accordion-title {
 .contact-us-link {
   margin-top: 40px;
   cursor: pointer;
-
   display: flex;
   width: fit-content;
   padding: 16px 20px;
   justify-content: center;
   align-items: center;
   gap: 15px;
-
   border-radius: 5px;
   border: 1px solid white;
   box-shadow: 2px 4px 9px 1px rgba(0, 0, 0, 0.05);
-
   color: #fff;
   text-align: center;
   font-family: var(--gilroy-font);
@@ -2225,24 +2342,50 @@ input[type="checkbox"]:checked + .accordion-title {
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 111.111% */
+  position: relative;
+  overflow: hidden;
 }
+
+.contact-us-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.contact-us-link:hover::after {
+  opacity: 1;
+  animation: shine-contact-us 1s forwards; /* Removed 'infinite' */
+}
+
+@keyframes shine-contact-us {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 
 .join-the-membership-link {
   margin-top: 40px;
   cursor: pointer;
-
   display: flex;
   width: fit-content;
   padding: 16px 20px;
   justify-content: center;
   align-items: center;
   gap: 15px;
-
   border-radius: 5px;
   background: #181818;
-
   box-shadow: 2px 4px 9px 1px rgba(0, 0, 0, 0.05);
-
   color: #fff;
   text-align: center;
   font-family: var(--gilroy-font);
@@ -2250,7 +2393,37 @@ input[type="checkbox"]:checked + .accordion-title {
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 111.111% */
+  position: relative;
+  overflow: hidden;
 }
+
+.join-the-membership-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.join-the-membership-link:hover::after {
+  opacity: 1;
+  animation: shine-membership 1s forwards; /* Removed 'infinite' */
+}
+
+@keyframes shine-membership {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .contact-us-section {
