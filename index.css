@@ -1194,6 +1194,18 @@
   color: white;
 }
 
+.single-feature:hover:nth-child(3) path {
+  fill: white;
+}
+
+.single-feature:hover:nth-child(4) path {
+  fill: white;
+}
+
+.single-feature:hover:nth-child(6) path {
+  fill: white;
+}
+
 .single-feature-title {
   margin-top: 28.38px;
   color: #181818;
