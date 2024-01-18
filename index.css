@@ -11,6 +11,10 @@
 
 /* Custom Codes */
 
+.invisible {
+  opacity: 0;
+}
+
 /* Navbar START */
 .navbar {
   margin: 51px 0;
