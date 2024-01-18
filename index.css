@@ -1493,7 +1493,7 @@
 }
 
 .scrolls {
-  background: #f8f9f9;
+  /* background: #f8f9f9; */
   height: 816px;
   padding: 0 10px;
   overflow: hidden;
