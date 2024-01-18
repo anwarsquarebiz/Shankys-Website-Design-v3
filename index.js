@@ -64,6 +64,9 @@ const seminarsection = new IntersectionObserverHandler(".seminar-section", ["ani
 // Add Animate class to testimonial-subtitle
 const testimonialsubtitle = new IntersectionObserverHandler(".testimonial-subtitle", ["animate__animated", "animate__fadeInRight"]);
 
+// Add Animate class to testimonial-subtitle-svg
+const testimonialsubtitlesvg = new IntersectionObserverHandler(".testimonial-subtitle-svg", ["animate__animated", "animate__fadeInRight"]);
+
 // Add Animate class to single-testimonial
 const singletestimonial = new IntersectionObserverHandler(".single-testimonial", ["animate__animated", "animate__fadeInRight"]);
 
