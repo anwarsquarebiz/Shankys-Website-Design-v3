@@ -195,10 +195,20 @@
 
       <div class="content">
         <div class="user-greeting-and-password-change">
-          <div class="usergreeting">Hello, <span>Abhishek</span></div>
-          <div class="password-editor">
-            <img src="img/avatar-image.png" alt="" />
-            <img src="img/dropdown-icon.svg" alt="" />
+          <div class="usergreeting">Hello, <span>{{user.username}}</span></div>
+          
+          <div>            
+            <div class="password-editor">
+              <img src="img/avatar-image.png" alt="" />
+              <img onclick="togglepasswordchange()" src="img/dropdown-icon.svg" alt="" />            
+            </div>
+            
+            <div id="password_change_option" class="password_change_option" style="display: none;">
+              <div class="emailid">emai id: {{user.email}}</div>
+              <div class="changepassword"> <img src="static/img/material-symbols_password.png" alt="">Change Password</div>
+              <div class="dashboard-logout"> <img src="static/img/ic_round-logout.png" alt="">Change Password</div>              
+            </div>
+              
           </div>
         </div>
 
@@ -206,48 +216,54 @@
           <img src="img/promotion-background.png" alt="Promotion Image" />
         </div>
 
-        <div class="package-title-container">
-          <div class="package-title-vector"></div>
-          <div class="package-title-text">BASIC +</div>
-          <div class="package-title-vector"></div>
-        </div>
-
-        <div class="app-container">
-          <div class="app">
-            <img src="img/tradingview-logo.png" alt="Tradingview Logo" />
-            <form class="tradingview-form" action="">
-              <input type="text" placeholder="Username here" />
-              <button type="submit">Update</button>
-            </form>
+        <div class="basic-plus-section">         
+          <div class="package-title-container">
+            <div class="package-title-vector"></div>
+            <div class="package-title-text">BASIC +</div>
+            <div class="package-title-vector"></div>
           </div>
 
-          <div class="app-divider"></div>
-
-          <div class="app">
-            <img src="img/discord-logo.png" alt="Discord Logo" />
-            <div class="app-link">
-              <a href="">Connect</a>
+          <div class="app-container">
+            <div class="app">
+              <img src="img/tradingview-logo.png" alt="Tradingview Logo" />
+              <form class="tradingview-form" action="">
+                <input type="text" placeholder="Username here" />
+                <button type="submit">Update</button>
+              </form>
             </div>
-          </div>
 
-          <div class="app-divider"></div>
+            <div class="app-divider"></div>
 
-          <div class="app">
-            <img src="img/telegram-logo.png" alt="Telegram Logo" />
-            <div class="app-link">
-              <a href="">Connect</a>
+            <div class="app">
+              <img src="img/discord-logo.png" alt="Discord Logo" />
+              <div class="app-link">
+                <a href="">Connect</a>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div class="dashboard__disclaimer">
-          <ul>
-            <li>After submitting your TradingView username, it will take 24 hours to reflect in your account.</li>
-            <li>All the levels will be available on Discord. Click the 'Connect' button for access. If you don't have a Discord account, create a new <a href="https://discord.com/" target="_blank">Discord account.</a></li>
-          </ul>
-        </div>
+            <div class="app-divider"></div>
+
+            <div class="app">
+              <img src="img/telegram-logo.png" alt="Telegram Logo" />
+              <div class="app-link">
+                <a href="">Connect</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="dashboard__disclaimer">
+            <ul>
+              <li>After submitting your TradingView username, it will take 24 hours to reflect in your account.</li>
+              <li>All the levels will be available on Discord. Click the 'Connect' button for access. If you don't have a Discord account, create a new <a href="https://discord.com/" target="_blank">Discord account.</a></li>            
+            </ul>
+          </div>
+        </div><!-- basic-plus-section end -->
 
       </div>
     </div>
+
+    <script src="dashboard.js"></script>
+
   </body>
 </html>

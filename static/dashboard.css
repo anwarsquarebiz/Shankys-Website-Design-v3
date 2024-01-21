@@ -141,6 +141,8 @@ ul li:hover svg path.stroke-hover {
   padding: 40px 151px 40px 40px;
   flex-direction: column;
   align-items: flex-start;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .user-greeting-and-password-change {
@@ -170,9 +172,96 @@ ul li:hover svg path.stroke-hover {
 
 .password-editor {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   gap: 20px;
+}
+
+.password_change_option {
+  margin-top: 10px;
+  position: absolute;
+  right: 151px;
+
+  padding: 20px;
+
+  width: 394px;
+  flex-shrink: 0;
+
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #fff;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  
+}
+
+.fade-in-animation {
+  animation: fadeIn 0.5s ease-in-out forwards; /* Animation properties */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+.emailid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+
+  color: #00000050;
+  font-family: var(--gilroy-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.changepassword {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+
+  color: #000;
+  font-family: var(--gilroy-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
+}
+
+.dashboard-logout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+
+  color: #000;
+  font-family: var(--gilroy-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
 }
 
 .promotion-banner-container {
@@ -215,10 +304,13 @@ ul li:hover svg path.stroke-hover {
 }
 
 .app-container {
+  width: 100%;
   padding: 0 74px;
   display: flex;
   flex-direction: row;
   gap: 60px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .app-container .app-divider {
@@ -252,6 +344,7 @@ ul li:hover svg path.stroke-hover {
 
 .app-container .app .tradingview-form {
   margin-top: 36px;
+  flex-shrink: 0;
 }
 
 .app-container .app .tradingview-form button {
@@ -260,7 +353,7 @@ ul li:hover svg path.stroke-hover {
   border-radius: 0 5px 5px 0;
   border: 0.5px solid #000;
   background: #fff;
-  width: 183px;
+  max-width: 183px;
   height: 60px;
   margin-top: 0;
 
