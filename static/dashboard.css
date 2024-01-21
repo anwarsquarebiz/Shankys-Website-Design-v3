@@ -1,0 +1,324 @@
+:root {
+  --poppins-font: "Poppins", Helvetica;
+  --gilroy-font: "Gilroy-Medium-☞", Helvetica;
+  --gilroy-semibold-font: "Gilroy-SemiBold-☞", Helvetica;
+  --gilroy-bold-font: "Gilroy-Bold-☞", Helvetica;
+  --raleway-font: "Raleway", Helvetica;
+  --phonk-font: "Phonk-RegularDEMO", Helvetica;
+  --sora-font: "Sora", Helvetica;
+  --bratannic-bold: "Britannic Bold-Regular", Helvetica;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.side-navbar {
+  overflow-y: scroll;
+
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+
+  /* For Webkit (Chrome, Safari, etc.) */
+  &::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the color of the thumb (the moving part) */
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the color of the track (the non-moving part) */
+  }
+
+  height: 100%;
+  width: 20%;
+  min-width: 380px;
+  padding-top: 61px;
+  padding-bottom: 110px;
+
+  display: flex;
+  flex-direction: column;
+
+  color: #000;
+
+  font-family: var(--gilroy-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 166.667% */
+}
+
+.logo-container {
+  padding-bottom: 61px;
+  padding-left: 71px;
+  padding-right: 71px;
+}
+
+.active-link {
+  background: #fdf3f6;
+}
+
+.link-text-active {
+  color: #de1f54;
+  font-family: var(--gilroy-semibold-font);
+}
+
+.active-vector {
+  width: 6px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 999px 0px 0px 999px;
+  background: #de1f54;
+  margin-left: auto;
+  content: "";
+}
+
+.nav-links ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links ul li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 71px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: right;
+}
+
+.nav-links ul li:hover a {
+  background: #fdf3f6;
+  color: #de1f54;
+  font-family: var(--gilroy-semibold-font);
+}
+
+.nav-links ul li svg {
+  margin-right: 20px;
+}
+
+ul li:hover svg path.fill-hover {
+  fill: #de1f54;
+}
+
+ul li:hover svg path.stroke-hover {
+  stroke: #de1f54;
+}
+
+.policies {
+  margin-top: auto;
+  padding-top: 25px;
+}
+
+.policies ul li a {
+  padding-left: 71px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.policies ul li:hover a {
+  background: #fdf3f6;
+  color: #de1f54;
+  font-family: var(--gilroy-semibold-font);
+}
+
+.policies ul li svg {
+  margin-right: 20px;
+}
+
+.content {
+  background: #fef4f4;
+  width: 80%;
+  display: flex;
+  padding: 40px 151px 40px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-greeting-and-password-change {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.usergreeting {
+  color: #181818;
+  font-family: var(--gilroy-font);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.usergreeting span {
+  color: #181818;
+  font-family: var(--gilroy-semibold-font);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.password-editor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.promotion-banner-container {
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.promotion-banner-container img {
+  width: 100%;
+}
+
+.package-title-container {
+  padding: 74px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.package-title-vector {
+  width: 100%; /* Use a percentage for width */
+  max-width: 539px; /* Set a maximum width if needed */
+  height: 0px;
+  border: 1.5px solid #7f7878;
+}
+
+.package-title-text {
+  color: #7f7878;
+  flex-shrink: 0;
+  text-align: center;
+  font-family: var(--gilroy-bold-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 136.364% */
+  text-transform: uppercase;
+}
+
+.app-container {
+  padding: 0 74px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.app-container .app-divider {
+  height: 72px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.app-container .app img {
+  height: 44px;
+}
+
+.app-container .app .tradingview-form input {
+  width: 309px;
+  height: 60px;
+  padding: 20px 16px;
+
+  color: #000;
+
+  font-family: var(--gilroy-semibold-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
+
+  opacity: 0.8;
+
+  border-radius: 5px 0 0 5px;
+  border: 0.5px solid #000;
+  background: #fff;
+}
+
+.app-container .app .tradingview-form {
+  margin-top: 36px;
+}
+
+.app-container .app .tradingview-form button {
+  margin-left: -5px;
+  padding-top: 0;
+  border-radius: 0 5px 5px 0;
+  border: 0.5px solid #000;
+  background: #fff;
+  width: 183px;
+  height: 60px;
+  margin-top: 0;
+
+  border-radius: 0px 5px 5px 0px;
+  background: #000;
+
+  color: #fff;
+
+  font-family: var(--gilroy-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
+}
+
+.app-link {
+  margin-top: 36px;
+  width: 231px;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #fff;
+
+  color: #000;
+
+  text-align: center;
+  font-family: var(--gilroy-semibold-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
+
+  display: grid;
+  align-items: center;
+}
+
+.dashboard__disclaimer {
+  margin-top: 60px;
+  color: #000;
+
+  font-family: var(--gilroy-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+
+.dashboard__disclaimer a {
+  opacity: 0.8;
+  color: #000;
+  font-family: var(--gilroy-bold-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.dashboard__disclaimer ul {
+  list-style-type: disc;
+  margin-left: 15px;
+}
