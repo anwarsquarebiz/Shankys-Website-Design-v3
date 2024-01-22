@@ -557,7 +557,7 @@ ul li:hover svg path.stroke-hover {
   }
 
   .active-link .stroke-hover {
-    fill: #fff;
+    stroke: #fff;
   }
 
   ul li:hover svg path.fill-hover {
@@ -728,7 +728,7 @@ ul li:hover svg path.stroke-hover {
     list-style-type: disc;
     margin-left: 15px;
   }
-  
+
 }
 
 /* Basic + and Premium Mobile END */
