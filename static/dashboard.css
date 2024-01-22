@@ -449,6 +449,11 @@ ul li:hover svg path.stroke-hover {
 
 /* Basic + and Premium Mobile START */
 @media screen and (max-width: 768px) {
+  .mobile-padding {
+    padding-left: 25px !important; 
+    padding-right: 25px !important;
+  }
+
   .side-navbar {
     background-color: #1f2122;
     padding-top: 43px;
@@ -696,6 +701,7 @@ ul li:hover svg path.stroke-hover {
 
   .dashboard__disclaimer {
     margin-top: 60px;
+    margin-bottom: 20px;
     color: #000;
 
     color: #000;
