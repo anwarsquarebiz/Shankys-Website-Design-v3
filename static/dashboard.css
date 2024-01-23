@@ -1112,6 +1112,8 @@ ul li:hover svg path.stroke-hover {
   gap: 20px;
 }
 
+
+
 .slide {
   flex: 0 0 auto;
   padding: 10px;
@@ -1214,7 +1216,7 @@ ul li:hover svg path.stroke-hover {
 
   .accordion-item .accordion-header .accordion-button {
     border-radius: 10px;
-    background: #FEF4F4;
+    background: #fef4f4;
 
     color: #000;
 
@@ -1229,7 +1231,7 @@ ul li:hover svg path.stroke-hover {
     margin-left: 5px;
     padding: 9px 30px;
     border-radius: 10px;
-    color: #DE1F54;
+    color: #de1f54;
     background: none;
     font-family: var(--gilroy-semibold-font);
     font-size: 12px;
@@ -1239,11 +1241,47 @@ ul li:hover svg path.stroke-hover {
   }
 
   .accordion-body {
-    padding: 0;
+    padding: 0 !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    gap: 15px;
   }
 
   .white-bg {
     background: white;
+  }
+
+  .accordion-body .slide {
+    padding: 15px;
+    width: 100% !important;
+  }
+
+  .customer-logos .slide {
+    width: 200px !important;
+  }
+
+  .customer-logos .slide img {
+    width: 100%;
+  }
+
+  .course-name {
+    color: #000;
+    font-family: var(--gilroy-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+  }
+
+  .video-title {
+    color: #000;
+
+    font-family: var(--gilroy-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 
