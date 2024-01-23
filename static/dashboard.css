@@ -1051,3 +1051,202 @@ ul li:hover svg path.stroke-hover {
 /* Live Mobile END */
 
 /* Live END */
+
+/* Courses START */
+
+.courses__premium-section {
+  width: 100%;
+}
+
+.video-slider {
+  border-radius: 10px;
+  background: #fff;
+  padding: 40px;
+  padding-right: 0px;
+}
+
+.course-name {
+  margin-top: 20px;
+  color: #000;
+
+  font-family: var(--gilroy-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.video-title {
+  margin-top: 10px;
+  color: #000;
+
+  font-family: var(--gilroy-semibold-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+
+.customer-logos::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+.customer-logos::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Set the color of the scrollbar thumb to transparent */
+}
+
+.customer-logos:hover::-webkit-scrollbar-thumb {
+  background-color: initial; /* Show the scrollbar thumb on hover */
+}
+
+#video-slider {
+  width: 300px; /* Adjust as needed */
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+#scroll-container {
+  display: flex;
+  width: 100%; /* Ensure the container takes full width */
+  transition: transform 0.5s ease; /* Smooth transition effect */
+  gap: 20px;
+}
+
+.slide {
+  flex: 0 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+
+  transition: filter 0.4s;
+  border-radius: 10px;
+  background: #fef4f4;
+  padding: 20px;
+  width: 390px !important;
+}
+
+.video-slider-title-and-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.video-slider-title {
+  color: #000;
+  font-family: var(--gilroy-semibold-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.video-slider-navigation {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+.accordion-item {
+  margin-bottom: 25px;
+}
+
+.accordion-item .accordion-header .accordion-button {
+  border-radius: 10px;
+  background: #fff;
+
+  color: #000;
+
+  font-family: var(--gilroy-semibold-font);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
+}
+
+.accordion-item .accordion-header span {
+  margin-left: 47px;
+  padding: 9px 30px;
+  border-radius: 10px;
+  background: #de1f54;
+  color: #fff;
+
+  font-family: var(--gilroy-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+
+.accordion-body {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Courses Mobile START */
+
+@media screen and (max-width: 768px) {
+  .accordion {
+    background: #fff;
+    padding-top: 5px;
+  }
+
+  .accordion-item {
+    border-radius: 10px;
+  }
+
+  .video-slider-title {
+    color: #1c1919;
+
+    font-family: var(--gilroy-semibold-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .accordion-item .accordion-header .accordion-button {
+    border-radius: 10px;
+    background: #FEF4F4;
+
+    color: #000;
+
+    font-family: var(--gilroy-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+
+  .accordion-item .accordion-header span {
+    margin-left: 5px;
+    padding: 9px 30px;
+    border-radius: 10px;
+    color: #DE1F54;
+    background: none;
+    font-family: var(--gilroy-semibold-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+  }
+
+  .accordion-body {
+    padding: 0;
+  }
+
+  .white-bg {
+    background: white;
+  }
+}
+
+/* Courses Mobile END */
+
+/* Courses END */

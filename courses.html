@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shankys Trading :: Premium</title>
+    <title>Shankys Trading :: Courses</title>
 
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="static/dashboard.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
     <div class="main">
@@ -70,7 +72,7 @@
       
         <div class="nav-links">
           <ul>
-
+            
             <li>
               <a href="">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -101,15 +103,14 @@
               </a>
             </li>
       
-            <li class="active-link">
+            <li>
               <a href="premium.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                   <path class="stroke-hover"
                     d="M8.33203 33.3327H31.6654M3.33203 6.66602L8.33203 26.666H31.6654L36.6654 6.66602L26.6654 18.3327L19.9987 6.66602L13.332 18.3327L3.33203 6.66602Z"
-                    stroke="#DE1F54" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <span class="link-text-active">Premium</span>
-                <span class="active-vector"></span>
+                <span class="link-text">Premium</span>
               </a>
             </li>
       
@@ -124,14 +125,15 @@
               </a>
             </li>
       
-            <li>
+            <li class="active-link">
               <a href="courses.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                   <path class="fill-hover"
                     d="M30 37.5H10C9.33716 37.4993 8.70166 37.2357 8.23296 36.767C7.76427 36.2983 7.50066 35.6628 7.5 35V5C7.50066 4.33716 7.76427 3.70166 8.23296 3.23296C8.70166 2.76427 9.33716 2.50066 10 2.5H30C30.6628 2.50066 31.2983 2.76427 31.767 3.23296C32.2357 3.70166 32.4993 4.33716 32.5 5V25.7725L26.25 22.6475L20 25.7725V5H10V35H30V30H32.5V35C32.499 35.6627 32.2353 36.298 31.7667 36.7667C31.298 37.2353 30.6627 37.499 30 37.5ZM26.25 19.8525L30 21.7275V5H22.5V21.7275L26.25 19.8525Z"
-                    fill="black" />
+                    fill="#DE1F54" />
                 </svg>
-                <span class="link-text">Courses</span>
+                <span class="link-text-active">Courses</span>
+                <span class="active-vector"></span>
               </a>
             </li>
 
@@ -248,7 +250,7 @@
           <img src="img/promotion-background.png" alt="Promotion Image" />
         </div>
 
-        <div class="basic-plus-section">
+        <div class="courses__premium-section">
 
           <div class="package-title-container">
             <div class="package-title-vector hide-on-mobile"></div>
@@ -258,50 +260,322 @@
 
           <div class="mobile-package-title-vector"></div>
 
-          <div class="app-container mobile-padding">
-            <div class="app">
-              <img class="hide-on-mobile" src="img/tradingview-logo.png" alt="Tradingview Logo" />
-              <img class="mobile-view-block" src="img/trading-view-mobile-logo.png" alt="Tradingview Logo" />
-              <form class="tradingview-form" action="">
-                <input type="text" placeholder="Username here" />
-                <button type="submit">Update</button>
-              </form>
+          <div id="video-slider mobile-padding" class="video-slider">
+            <div class="video-slider-title-and-navigation">
+              <div class="video-slider-title">
+                Premium Courses
+              </div>
+
+              <div class="video-slider-navigation">
+                <svg id="scroll-left-button" xmlns="http://www.w3.org/2000/svg" width="36" height="16" viewBox="0 0 36 16" fill="none">
+                  <path d="M0.292896 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292896 8.7071L6.65686 15.0711C7.04738 15.4616 7.68055 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.92893C7.68055 0.538405 7.04738 0.538405 6.65686 0.92893L0.292896 7.29289ZM36 7L1 7L1 9L36 9L36 7Z" fill="black"/>
+                </svg>
+                
+                <svg id="scroll-right-button" xmlns="http://www.w3.org/2000/svg" width="36" height="16" viewBox="0 0 36 16" fill="none">
+                  <path d="M35.7071 8.70711C36.0976 8.31658 36.0976 7.68342 35.7071 7.29289L29.3431 0.928932C28.9526 0.538408 28.3195 0.538408 27.9289 0.928932C27.5384 1.31946 27.5384 1.95262 27.9289 2.34315L33.5858 8L27.9289 13.6569C27.5384 14.0474 27.5384 14.6805 27.9289 15.0711C28.3195 15.4616 28.9526 15.4616 29.3431 15.0711L35.7071 8.70711ZM0 9H35V7H0V9Z" fill="black"/>
+                </svg>                
+              </div>
             </div>
+            <div style="overflow: hidden">
+              <div id="scroll-container" class="customer-logos slider">
+                
+                <div class="slide-in-right slide">
+                  <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                  <div class="course-name">Class 01</div>
+                  <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                </div>
 
-            <div class="app-divider hide-on-mobile"></div>
+                <div class="slide-in-right slide">
+                  <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                  <div class="course-name">Class 01</div>
+                  <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                </div>
 
-            <div class="app">
-              <img class="hide-on-mobile" src="img/discord-logo.png" alt="Discord Logo" />
-              <img class="mobile-view-block" src="img/discord-mobile-logo.png" alt="Discord Logo" />
-              <div class="app-link">
-                <a href="">Connect</a>
+                <div class="slide-in-right slide">
+                  <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                  <div class="course-name">Class 01</div>
+                  <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                </div>
+
+                <div class="slide-in-right slide">
+                  <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                  <div class="course-name">Class 01</div>
+                  <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                </div>
+
+                <div class="slide-in-right slide">
+                  <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                  <div class="course-name">Class 01</div>
+                  <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                </div>
+
+                <div class="slide-in-right slide">
+                  <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                  <div class="course-name">Class 01</div>
+                  <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="package-title-container white-bg">
+            <div class="package-title-vector hide-on-mobile"></div>
+            <div class="package-title-text mobile-padding">Basic +</div>
+            <div class="package-title-vector hide-on-mobile"></div>
+          </div>
+
+          <!-- Courses Videos -->
+
+          <div class="accordion accordion-flush mobile-padding" id="accordionFlushExample">
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Chapter 01 - Basics <span>11 Classes</span>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+
+                </div>
               </div>
             </div>
 
-            <div class="app-divider hide-on-mobile"></div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Chapter 02 - Indicators <span>5 Classes</span>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
 
-            <div class="app">
-              <img class="hide-on-mobile" src="img/telegram-logo.png" alt="Telegram Logo" />
-              <img class="mobile-view-block" src="img/telegram-mobile-logo.png" alt="Telegram Logo" />
-              <div class="app-link">
-                <a href="">Connect</a>
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Chapter 03 - Psychology <span>7 Classes</span>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
 
-          </div>
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
 
-          <div class="dashboard__disclaimer mobile-padding">
-            <ul>
-              <li>After submitting your TradingView username, it will take 24 hours to reflect in your account.</li>
-              <li>All the levels will be available on Discord. Click the 'Connect' button for access. If you don't have a Discord account, create a new <a href="https://discord.com/" target="_blank">Discord account.</a></li>            
-            </ul>
-          </div>
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Chapter 04 - Tricks <span>6 Classes</span>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+
+                  <div class="slide-in-right slide">
+                    <img class="video-image" src="img/Stocks And The Law Of Supply & Demand Thumbail.png" alt="Kinderhotel Aschauerhof"></a>
+                    <div class="course-name">Class 01</div>
+                    <div class="video-title">Stocks And The Law Of Supply & Demand</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>        
         </div><!-- basic-plus-section end -->
 
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="dashboard.js"></script>
+
+
 
   </body>
 </html>
