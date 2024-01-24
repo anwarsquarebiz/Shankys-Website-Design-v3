@@ -72,7 +72,12 @@ a {
 }
 
 @font-face {
-  font-family: "Gilroy-Medium-Regular";
+  font-family: "Gilroy-Regular";
   src: url("https://anima-uploads.s3.amazonaws.com/projects/635131b13f27792e46569104/fonts/gilroy-medium.ttf")
     format("truetype");
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('/static/fonts/Gilroy-Regular.ttf');
 }

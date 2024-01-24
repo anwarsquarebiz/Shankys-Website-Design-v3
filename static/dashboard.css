@@ -1,8 +1,11 @@
 :root {
   --poppins-font: "Poppins", Helvetica;
+
+  --gilroy-regular-font: "Gilroy-Regular", Helvetica;
   --gilroy-font: "Gilroy-Medium-☞", Helvetica;
   --gilroy-semibold-font: "Gilroy-SemiBold-☞", Helvetica;
   --gilroy-bold-font: "Gilroy-Bold-☞", Helvetica;
+
   --raleway-font: "Raleway", Helvetica;
   --phonk-font: "Phonk-RegularDEMO", Helvetica;
   --sora-font: "Sora", Helvetica;
@@ -84,7 +87,7 @@ a:active {
 
   color: #000;
 
-  font-family: var(--gilroy-font);
+  font-family: var(--gilroy-regular-font);
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -119,6 +122,7 @@ a:active {
 .nav-links ul {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .nav-links ul li a {
@@ -199,7 +203,7 @@ ul li:hover svg path.stroke-hover {
 
 .usergreeting {
   color: #181818;
-  font-family: var(--gilroy-font);
+  font-family: var(--gilroy-regular-font);
   font-size: 36px;
   font-style: normal;
   font-weight: 300;
@@ -315,6 +319,7 @@ ul li:hover svg path.stroke-hover {
 
 .promotion-banner-container img {
   width: 100%;
+  border-radius: 10px;
 }
 
 /* Basic + and Premium START */
@@ -371,8 +376,16 @@ ul li:hover svg path.stroke-hover {
   /* height: 44px; */
 }
 
+.app-container .app .tradingview-form {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 36px;
+  flex-shrink: 0;
+}
+
 .app-container .app .tradingview-form input {
-  width: 309px;
+  flex-grow: 1;
   height: 60px;
   padding: 20px 16px;
 
@@ -384,24 +397,21 @@ ul li:hover svg path.stroke-hover {
   font-weight: 400;
   line-height: 28px; /* 127.273% */
 
-  opacity: 0.8;
-
   border-radius: 5px 0 0 5px;
   border: 0.5px solid #000;
   background: #fff;
 }
 
-.app-container .app .tradingview-form {
-  margin-top: 36px;
-  flex-shrink: 0;
-}
-
 .app-container .app .tradingview-form button {
+  display: grid;
+  align-items: center;
   margin-left: -5px;
-  padding-top: 0;
+  padding: 0 53px;
   border-radius: 0 5px 5px 0;
   border: 0.5px solid #000;
   background: #fff;
+
+  width: 100%;
   max-width: 183px;
   height: 60px;
   margin-top: 0;
@@ -1454,17 +1464,115 @@ ul li:hover svg path.stroke-hover {
 
 /* Admin Mobile START */
 @media screen and (max-width: 768px) {
-
-.admin-links ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
+  .admin-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 /* Admin Mobile END */
 
 /* Admin Page END */
+
+/* 404 Page START */
+
+._404__title {
+  margin-top: 15px;
+
+  color: #181515;
+
+  text-align: center;
+  font-family: var(--gilroy-bold-font);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+._404__text {
+  margin-top: 15px;
+
+  color: #181515;
+
+  text-align: center;
+  font-family: var(--gilroy-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+._404__back_to_home_button {
+  margin-top: 50px;
+
+  display: block;
+  width: 313px;
+  height: 64px;
+  flex-shrink: 0;
+  padding: 14px 49px;
+
+  border-radius: 10px;
+  background: #de1f54;
+
+  box-shadow: 0px 4px 50px 0px rgba(222, 31, 84, 0.15);
+
+  filter: drop-shadow(0px 4px 50px rgba(222, 31, 84, 0.15));
+
+  color: #fff;
+
+  text-align: center;
+  font-family: var(--gilroy-semibold-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 150% */
+}
+
+/* 404 Page Mobile START */
+
+@media screen and (max-width: 768px) {
+  ._404__image {
+    height: 246px;
+  }
+  ._404__title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  ._404__text {
+    margin-top: 15px;
+
+    color: #181515;
+
+    text-align: center;
+    font-family: var(--gilroy-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+  }
+
+  ._404__back_to_home_button {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-family: var(--gilroy-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+}
+/* 404 Page Mobile END */
+
+/* 404 Page END */
