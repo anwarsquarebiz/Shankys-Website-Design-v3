@@ -155,7 +155,12 @@ ul li:hover svg path.stroke-hover {
   padding-top: 25px;
 }
 
+.policies ul {
+  padding-left: 0;
+}
+
 .policies ul li a {
+  color: black;
   padding-left: 71px;
   display: flex;
   flex-direction: row;
