@@ -1585,3 +1585,499 @@ ul li:hover svg path.stroke-hover {
 /* 404 Page Mobile END */
 
 /* 404 Page END */
+
+/* Purchase Page START */
+
+.purchase-page {
+  background: #737373;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.close_button {
+  display: block;
+}
+
+.purchase__container {
+  text-align: center;
+  width: 1172px;
+  padding: 30px 30px 120px 30px;
+
+  border-radius: 50px;
+  background: #181515;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchase__title {
+  margin-top: 44px;
+
+  color: #fff;
+
+  font-family: var(--gilroy-bold-font);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 57px; /* 114% */
+}
+
+.purchase__text {
+  margin-top: 20px;
+
+  color: #fff;
+
+  text-align: center;
+  font-family: var(--gilroy-regular-font);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 153.846% */
+}
+
+.purchase__membership_link {
+  display: block;
+
+  margin-top: 50px;
+  width: 511px;
+  height: 88px;
+
+  color: #fff;
+
+  border: 1px solid #fff;
+
+  text-align: center;
+  font-family: var(--gilroy-font);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 142.857% */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchase__logout_link {
+  display: block;
+  margin-top: 30px;
+  color: #fff;
+
+  text-align: center;
+  font-family: var(--gilroy-font);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 142.857% */
+}
+
+/* Purchase Page Mobile START */
+
+@media screen and (max-width: 768px) {
+  .purchase__container {
+    text-align: center;
+    width: 100%;
+    padding: 15px 15px 53px 15px;
+
+    border-radius: 10px;
+    background: #181515;
+
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .purchase__title {
+    margin-top: 18px;
+
+    color: #fff;
+
+    font-family: var(--gilroy-bold-font);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .purchase__text {
+    margin-top: 5px;
+
+    color: #fff;
+
+    text-align: center;
+    font-family: var(--gilroy-regular-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+  }
+
+  .purchase__membership_link {
+    display: block;
+
+    margin-top: 30px;
+    width: 253px;
+    height: 40px;
+
+    color: #fff;
+
+    border-radius: 5px;
+    background: #de1f54;
+    border-color: #de1f54;
+    box-shadow: 0px 4px 50px 0px rgba(222, 31, 84, 0.15);
+
+    text-align: center;
+    font-family: var(--gilroy-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .purchase__logout_link {
+    display: block;
+    margin-top: 15px;
+    color: #fff;
+
+    text-align: center;
+    font-family: var(--gilroy-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+/* Purchase Page Mobile END */
+
+/* Purchase Page END */
+
+/* Checkout Page START */
+
+.mobile-container {
+  margin-bottom: 80px;
+}
+
+.checkout__container {
+  text-align: center;
+  width: 823px;
+  padding: 50px;
+
+  border-radius: 50px;
+  background: #181515;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout__flex {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.checkout__text {
+  color: #fff;
+  font-family: var(--gilroy-regular-font);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 142.857% */
+}
+
+.checkout__voucher_code_form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.checkout__voucher_code_form svg {
+  position: relative;
+  left: -60px;
+}
+
+.checkout__voucher_code_form_input {
+  width: 331px;
+  height: 72px;
+
+  border-radius: 5px;
+  border: 1px solid #fff;
+  opacity: 0.5;
+  background: #181515;
+
+  color: #fff;
+
+  font-family: var(--gilroy-regular-font);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 142.857% */
+
+  padding: 16px;
+}
+
+.checkout__voucher_code_form_button {
+  width: 207px;
+  height: 72px;
+  flex-shrink: 0;
+
+  border-radius: 105px;
+  border: 1px solid #fff;
+
+  opacity: 0.5;
+  background: #181515;
+
+  color: #fff;
+
+  font-family: var(--gilroy-regular-font);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 142.857% */
+}
+
+.checkout__voucher_code_form_button:hover {
+  background: #de1f54;
+  border-color: #de1f54;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.checkout__total_text {
+  color: #fff;
+  font-family: var(--gilroy-semibold-font);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 142.857% */
+}
+
+.checkout__total_amount {
+  color: #fff;
+  text-align: right;
+  font-family: var(--gilroy-semibold-font);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.checkout__continue_button {
+  margin-top: 66px;
+
+  width: 100%;
+  height: 64px;
+  border-radius: 10px;
+  background: #de1f54;
+
+  color: #fff;
+
+  text-align: center;
+  font-family: var(--gilroy-semibold-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 166.667% */
+
+  display: grid;
+  align-items: center;
+}
+
+.checkout__warning {
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+  color: #ff3f3f;
+
+  font-family: var(--gilroy-regular-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+}
+
+.checkout__divider {
+  margin-top: 60px;
+}
+/* Checkout Page Mobile START */
+
+@media screen and (max-width: 768px) {
+
+  .mobile-container {
+    margin-bottom: 40px;
+  }
+
+  .checkout__container {
+    text-align: center;
+    width: 100%;
+    padding: 25px;
+
+    border-radius: 10px;
+    background: #181515;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .checkout__flex {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .checkout__text {
+    color: #fff;
+    font-family: var(--gilroy-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .checkout__voucher_code_form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* gap: 5px; */
+  }
+
+  .checkout__voucher_code_form svg {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: -25px;
+  }
+
+  .checkout__voucher_code_form_input {
+    width: 170px;
+    height: 36px;
+
+    border-radius: 5px;
+    border: 1px solid #fff;
+    opacity: 0.5;
+    background: #181515;
+
+    color: #fff;
+
+    color: #fff;
+
+    font-family: var(--gilroy-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding: 16px;
+  }
+
+  .checkout__voucher_code_form_button {
+    width: 81px;
+    height: 36px;
+    flex-shrink: 0;
+
+    border-radius: 85px;
+    border: 0.5px solid #fff;
+
+    opacity: 0.5;
+    background: #181515;
+
+    color: #fff;
+
+    font-family: var(--gilroy-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .checkout__voucher_code_form_button:hover {
+    background: #de1f54;
+    border-color: #de1f54;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .checkout__total_text {
+    color: #fff;
+    font-family: var(--gilroy-semibold-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .checkout__total_amount {
+    color: #fff;
+    text-align: right;
+    font-family: var(--gilroy-semibold-font);
+
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .checkout__continue_button {
+    margin-top: 42px;
+
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background: #de1f54;
+
+    color: #fff;
+
+    text-align: center;
+    font-family: var(--gilroy-semibold-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+
+    display: grid;
+    align-items: center;
+  }
+
+  .checkout__warning {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    color: #ff3f3f;
+
+    font-family: var(--gilroy-regular-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .checkout__divider {
+    margin-top: 40px;
+  }
+
+}
+/* Checkout Page Mobile END */
+
+/* Checkout Page END */
