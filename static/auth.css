@@ -9,6 +9,32 @@
   --bratannic-bold: "Britannic Bold-Regular", Helvetica;
 }
 
+.mobile-view-flex {
+  display: none;
+}
+
+.mobile-view-block {
+  display: none;
+}
+
+.display-flex {
+  display: flex !important;
+}
+
+@media screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .mobile-view-flex {
+    display: flex;
+  }
+
+  .mobile-view-block {
+    display: block;
+  }
+} 
+
 .login-page-container {
   display: flex;
   flex-direction: row;
@@ -160,6 +186,7 @@
 }
 
 .form-container .submit-button {
+  cursor: pointer;
   height: 64px;
   width: 100%;
   border-radius: 10px;
@@ -173,7 +200,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: 40px; /* 166.667% */
+  transition: background 0.3s ease;
 }
+
+.form-container .submit-button:hover {
+  background: #000;
+}
+
+
+
 
 .form-container .form-footer-link {
   margin-top: 30px;
@@ -197,9 +232,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* .background-image {
+  .background-image {
     display: none;
-  } */
+  }
 
   .login-page-container {
     display: flex;
