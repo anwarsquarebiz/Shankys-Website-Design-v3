@@ -1,0 +1,83 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,900,600,italic|Raleway:400|Sora:500,400,700");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Gilroy-Medium-☞";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/609ba63c8be9f9a21fc21698/fonts/gilroy-medium.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Phonk-RegularDEMO";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/62051bdd82aaea70cfa18b79/fonts/phonk-regular-demo.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold-☞";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/609ba63c8be9f9a21fc21698/fonts/gilroy-semibold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold-☞";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/6083d9d6f8ecf383cb5d0870/fonts/gilroy-bold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Britannic Bold-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/63eb5e7326c825b97aabf3be/fonts/inter-regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-ExtraBold-☞";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/654285ca6d8621def7b804c4/fonts/fontsfree-net-gilroy-extrabold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/59dfb1260b1fed000d431d8f/Radomir Tinkov - Gilroy-SemiBold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy-Black-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/5badeefd99488c000a4dbddf/Radomir Tinkov - Gilroy-Black.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/59dfb1260b1fed000d431d8f/Radomir Tinkov - Gilroy-Bold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/635131b13f27792e46569104/fonts/gilroy-medium.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('/static/fonts/Gilroy-Regular.ttf');
+}
