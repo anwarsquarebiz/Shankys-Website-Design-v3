@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,72 +9,74 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="static/auth.css" />
 
-      <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
 </head>
+
 <body>
 
     <div class="login-page-container" style="overflow: hidden;">
-        
+
         <div class="form-content">
             <div class="title-container">
-                <div class="section-title">                    
-                        <svg class="animate__animated animate__zoomIn" onclick="show_part_1()" id="sign_up-back_button" style="display: none; cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path d="M31.667 18.3331H11.9003L17.9503 11.0665C18.2332 10.7261 18.3693 10.2873 18.3287 9.8466C18.2881 9.40589 18.074 8.99937 17.7337 8.71648C17.3933 8.43358 16.9545 8.29747 16.5138 8.33811C16.0731 8.37874 15.6666 8.59278 15.3837 8.93314L7.05033 18.9331C6.99426 19.0127 6.94412 19.0962 6.90033 19.1831C6.90033 19.2665 6.90033 19.3165 6.78366 19.3998C6.70811 19.5909 6.66856 19.7943 6.66699 19.9998C6.66856 20.2053 6.70811 20.4087 6.78366 20.5998C6.78366 20.6831 6.78366 20.7331 6.90033 20.8165C6.94412 20.9034 6.99426 20.9869 7.05033 21.0665L15.3837 31.0665C15.5404 31.2546 15.7366 31.4059 15.9584 31.5096C16.1802 31.6133 16.4221 31.6669 16.667 31.6665C17.0564 31.6672 17.4338 31.5316 17.7337 31.2831C17.9024 31.1432 18.0419 30.9714 18.1442 30.7775C18.2464 30.5836 18.3094 30.3714 18.3296 30.1531C18.3497 29.9348 18.3265 29.7147 18.2615 29.5053C18.1964 29.296 18.0907 29.1016 17.9503 28.9331L11.9003 21.6665H31.667C32.109 21.6665 32.5329 21.4909 32.8455 21.1783C33.1581 20.8658 33.3337 20.4418 33.3337 19.9998C33.3337 19.5578 33.1581 19.1339 32.8455 18.8213C32.5329 18.5087 32.109 18.3331 31.667 18.3331Z" fill="black"/>
-                        </svg>
+                <div class="section-title">
+                    <svg class="animate__animated animate__zoomIn" onclick="show_part_1()" id="sign_up-back_button"
+                        style="display: none; cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="40"
+                        height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                            d="M31.667 18.3331H11.9003L17.9503 11.0665C18.2332 10.7261 18.3693 10.2873 18.3287 9.8466C18.2881 9.40589 18.074 8.99937 17.7337 8.71648C17.3933 8.43358 16.9545 8.29747 16.5138 8.33811C16.0731 8.37874 15.6666 8.59278 15.3837 8.93314L7.05033 18.9331C6.99426 19.0127 6.94412 19.0962 6.90033 19.1831C6.90033 19.2665 6.90033 19.3165 6.78366 19.3998C6.70811 19.5909 6.66856 19.7943 6.66699 19.9998C6.66856 20.2053 6.70811 20.4087 6.78366 20.5998C6.78366 20.6831 6.78366 20.7331 6.90033 20.8165C6.94412 20.9034 6.99426 20.9869 7.05033 21.0665L15.3837 31.0665C15.5404 31.2546 15.7366 31.4059 15.9584 31.5096C16.1802 31.6133 16.4221 31.6669 16.667 31.6665C17.0564 31.6672 17.4338 31.5316 17.7337 31.2831C17.9024 31.1432 18.0419 30.9714 18.1442 30.7775C18.2464 30.5836 18.3094 30.3714 18.3296 30.1531C18.3497 29.9348 18.3265 29.7147 18.2615 29.5053C18.1964 29.296 18.0907 29.1016 17.9503 28.9331L11.9003 21.6665H31.667C32.109 21.6665 32.5329 21.4909 32.8455 21.1783C33.1581 20.8658 33.3337 20.4418 33.3337 19.9998C33.3337 19.5578 33.1581 19.1339 32.8455 18.8213C32.5329 18.5087 32.109 18.3331 31.667 18.3331Z"
+                            fill="black" />
+                    </svg>
                     Create your account
                 </div>
-                <svg class="title-stroke-sign-up" xmlns="http://www.w3.org/2000/svg" width="309" height="26" viewBox="0 0 309 26" fill="none">
-                    <path d="M4.18495 22.8463C3.68018 22.5342 3.1595 22.0375 2.67821 21.1899L2.55483 20.9524C2.42 20.6929 2.35032 20.2051 2.61047 19.4136C2.86461 18.6404 3.3478 17.8686 3.8189 17.3411L3.82016 17.3397C4.51741 16.5578 5.36444 16.1287 6.43546 15.8441C7.23273 15.6323 7.97087 15.5334 8.8315 15.4181C9.28531 15.3573 9.77319 15.2919 10.3217 15.203L10.3219 15.203C14.6669 14.4986 19.0153 13.9709 23.4097 13.4377C24.7046 13.2805 26.0035 13.1229 27.3075 12.9602C38.8646 11.5185 50.4255 10.2276 61.9903 9.08736L61.9915 9.08723C102.803 5.04021 143.825 2.72148 184.54 3.0633C204.925 3.24221 225.21 3.73325 245.528 4.73968L245.529 4.73973C254.349 5.17282 263.131 5.90859 271.963 6.64847C273.267 6.75769 274.572 6.86701 275.878 6.97544C277.537 7.1132 279.191 7.24354 280.84 7.37348C289.347 8.04381 297.716 8.70334 305.95 10.3133L305.955 10.3143C306.168 10.3554 306.236 10.4306 306.296 10.5411C306.39 10.7115 306.47 11.0388 306.412 11.4722C306.354 11.9015 306.182 12.2628 305.988 12.4823C305.821 12.6721 305.667 12.736 305.487 12.7413C297.746 12.9656 290.08 12.5948 282.317 12.2193C278.728 12.0457 275.12 11.8712 271.473 11.7539L271.473 11.7539C263.59 11.5025 255.679 11.3722 247.793 11.2423C244.484 11.1878 241.18 11.1334 237.884 11.0701L237.883 11.0701C198.117 10.3248 158.17 11.1554 118.317 13.3529C98.2372 14.4466 78.1635 16.0525 58.1069 17.914L58.1061 17.9141C48.0692 18.8491 38.0335 19.8922 27.9987 21.0436C25.2841 21.3528 22.5138 21.6906 19.7557 22.027C17.3725 22.3177 14.9983 22.6072 12.677 22.8762L12.6741 22.8766C12.0763 22.9466 11.4739 23.0335 10.9002 23.1166L10.8472 23.1243C10.2829 23.206 9.74507 23.284 9.21232 23.3488C8.10597 23.4833 7.1358 23.5456 6.272 23.47C5.42526 23.3958 4.74751 23.1943 4.18495 22.8463Z" fill="#DE1F54" stroke="white" stroke-width="4.5"/>
+                <svg class="title-stroke-sign-up" xmlns="http://www.w3.org/2000/svg" width="309" height="26"
+                    viewBox="0 0 309 26" fill="none">
+                    <path
+                        d="M4.18495 22.8463C3.68018 22.5342 3.1595 22.0375 2.67821 21.1899L2.55483 20.9524C2.42 20.6929 2.35032 20.2051 2.61047 19.4136C2.86461 18.6404 3.3478 17.8686 3.8189 17.3411L3.82016 17.3397C4.51741 16.5578 5.36444 16.1287 6.43546 15.8441C7.23273 15.6323 7.97087 15.5334 8.8315 15.4181C9.28531 15.3573 9.77319 15.2919 10.3217 15.203L10.3219 15.203C14.6669 14.4986 19.0153 13.9709 23.4097 13.4377C24.7046 13.2805 26.0035 13.1229 27.3075 12.9602C38.8646 11.5185 50.4255 10.2276 61.9903 9.08736L61.9915 9.08723C102.803 5.04021 143.825 2.72148 184.54 3.0633C204.925 3.24221 225.21 3.73325 245.528 4.73968L245.529 4.73973C254.349 5.17282 263.131 5.90859 271.963 6.64847C273.267 6.75769 274.572 6.86701 275.878 6.97544C277.537 7.1132 279.191 7.24354 280.84 7.37348C289.347 8.04381 297.716 8.70334 305.95 10.3133L305.955 10.3143C306.168 10.3554 306.236 10.4306 306.296 10.5411C306.39 10.7115 306.47 11.0388 306.412 11.4722C306.354 11.9015 306.182 12.2628 305.988 12.4823C305.821 12.6721 305.667 12.736 305.487 12.7413C297.746 12.9656 290.08 12.5948 282.317 12.2193C278.728 12.0457 275.12 11.8712 271.473 11.7539L271.473 11.7539C263.59 11.5025 255.679 11.3722 247.793 11.2423C244.484 11.1878 241.18 11.1334 237.884 11.0701L237.883 11.0701C198.117 10.3248 158.17 11.1554 118.317 13.3529C98.2372 14.4466 78.1635 16.0525 58.1069 17.914L58.1061 17.9141C48.0692 18.8491 38.0335 19.8922 27.9987 21.0436C25.2841 21.3528 22.5138 21.6906 19.7557 22.027C17.3725 22.3177 14.9983 22.6072 12.677 22.8762L12.6741 22.8766C12.0763 22.9466 11.4739 23.0335 10.9002 23.1166L10.8472 23.1243C10.2829 23.206 9.74507 23.284 9.21232 23.3488C8.10597 23.4833 7.1358 23.5456 6.272 23.47C5.42526 23.3958 4.74751 23.1943 4.18495 22.8463Z"
+                        fill="#DE1F54" stroke="white" stroke-width="4.5" />
                 </svg>
             </div>
 
             <div class="form-container">
                 <form action="">
-                    <div class="animate__animated animate__zoomIn" id="form-part-1"> 
+                    <div class="animate__animated animate__zoomIn" id="form-part-1">
                         <div class="form-input-label">
                             <label for="">First Name*</label>
                         </div>
                         <div>
                             <input class="form-input" type="text" placeholder="Enter your first name">
-                        </div>                       
-                        
+                        </div>
+
                         <div class="form-input-label">
                             <label for="">Last Name*</label>
                         </div>
                         <div>
                             <input class="form-input" type="text" placeholder="Enter your last name">
-                        </div>       
-                        
+                        </div>
+
                         <div class="form-input-label">
                             <label for="">Date of Birth**</label>
                         </div>
                         <div>
                             <input class="form-input" type="date" placeholder="dd-mm-yyyy">
-                        </div> 
+                        </div>
 
                         <div class="form-input-label">
                             <label for="">Email Address*</label>
                         </div>
                         <div>
                             <input class="form-input" type="text" placeholder="Enter your email address">
-                        </div>                              
+                        </div>
 
                         <div>
-                            <input style="cursor: pointer;" class="submit-button"  type="button" value="Continue" onclick="hide_part_1()" id="sign_up-continue_button">
+                            <input style="cursor: pointer;" class="submit-button" type="button" value="Continue"
+                                onclick="validatePart1()" id="sign_up-continue_button">
                         </div>
                     </div>
 
@@ -85,21 +88,21 @@
                         <div>
                             <input class="form-input" type="text" placeholder="Userame">
                         </div>
-                        
+
                         <div class="form-input-label">
                             <label for="">Password*</label>
                         </div>
                         <div>
                             <input class="form-input" type="password" placeholder="Enter your password">
                         </div>
-                        
+
                         <div class="form-input-label">
                             <label for="">Confirm Password*</label>
                         </div>
                         <div>
                             <input class="form-input" type="password" placeholder="Confirm password">
                         </div>
-                       
+
                         <div class="form-input-label">
                             <label for="">Phone Number*</label>
                         </div>
@@ -129,7 +132,7 @@
                         </div>
 
                         <div>
-                            <input class="submit-button"  type="submit">
+                            <input class="submit-button" type="submit">
                         </div>
 
                     </div>
@@ -142,12 +145,33 @@
         </div>
 
         <div class="background-image">
-            
+
         </div>
 
     </div>
 
     <script>
+
+        function validatePart1() {
+            var part1Fields = document.querySelectorAll('#form-part-1 input[required]');
+            var isValid = true;
+
+            part1Fields.forEach(function (field) {
+                if (field.value.trim() === '') {
+                    isValid = false;
+                    return;
+                }
+            });
+
+            if (!isValid) {
+                alert("Please fill out all required fields in Part 1.");
+                return;
+            }
+
+            // If Part 1 is completed, proceed to Part 2
+            hide_part_1();
+        }
+
         function hide_part_1() {
             var part_1 = document.getElementById('form-part-1');
             var part_2 = document.getElementById('form-part-2');
@@ -155,8 +179,8 @@
             part_1.style.display = "none";
             part_2.style.display = "block";
             back_button.style.display = "block";
-            
-            
+
+
         }
 
         function show_part_1() {
@@ -170,4 +194,5 @@
     </script>
 
 </body>
+
 </html>
