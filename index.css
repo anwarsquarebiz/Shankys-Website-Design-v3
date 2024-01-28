@@ -739,6 +739,7 @@
 }
 
 .switch-button-active {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -751,6 +752,7 @@
 }
 
 .switch-button-inactive {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -802,6 +804,7 @@
   border-radius: 50px;
   background: #fff;
 }
+
 
 .simple-plan-border {
   border: 1px solid rgba(0, 0, 0, 0.5);

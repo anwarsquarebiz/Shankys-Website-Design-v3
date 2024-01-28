@@ -87,6 +87,52 @@ const accordion = new IntersectionObserverHandler(".accordion", ["animate__anima
 const contactussection = new IntersectionObserverHandler(".contact-us-section", ["animate__animated", "animate__fadeInUp"]);
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  const monthlyButton = document.getElementById('monthlyButton');
+  const annuallyButton = document.getElementById('annuallyButton');
+
+  const annualplan1 = document.getElementById('annualplan1');
+  const annualplan2 = document.getElementById('annualplan2');
+  const annualplan3 = document.getElementById('annualplan3');
+
+  const monthlyplan1 = document.getElementById('monthlyplan1');
+  const monthlyplan2 = document.getElementById('monthlyplan2');
+  const monthlyplan3 = document.getElementById('monthlyplan3');
+
+
+  monthlyButton.addEventListener('click', function () {
+      monthlyButton.classList.add('switch-button-active');
+      monthlyButton.classList.remove('switch-button-inactive');
+      annuallyButton.classList.add('switch-button-inactive');
+      annuallyButton.classList.remove('switch-button-active');
+
+      annualplan1.style.display = 'none';
+      annualplan2.style.display = 'none';
+      annualplan3.style.display = 'none';
+
+      monthlyplan1.style.display = 'block';
+      monthlyplan2.style.display = 'block';
+      monthlyplan3.style.display = 'block';
+     
+      
+  });
+
+  annuallyButton.addEventListener('click', function () {
+      annuallyButton.classList.add('switch-button-active');
+      annuallyButton.classList.remove('switch-button-inactive');
+      monthlyButton.classList.add('switch-button-inactive');
+      monthlyButton.classList.remove('switch-button-active');
+
+      annualplan1.style.display = 'block';
+      annualplan2.style.display = 'block';
+      annualplan3.style.display = 'block';
+
+      monthlyplan1.style.display = 'none';
+      monthlyplan2.style.display = 'none';
+      monthlyplan3.style.display = 'none';
+
+  });
+});
 
 // // Accordian Script
 

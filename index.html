@@ -378,10 +378,10 @@
 
       <div class="plan-switcher">        
         <div class="plan-switcher-container">
-          <div class="switch-button-active">
+          <div id="monthlyButton" class="switch-button-active">
             Monthly
           </div>
-          <div class="switch-button-inactive">
+          <div id="annuallyButton" class="switch-button-inactive">
             Annually
           </div>
         </div>
@@ -401,7 +401,7 @@
       </div>
 
       <div class="plans-container invisible">
-        <div class="plan simple-plan-border">
+        <div class="plan simple-plan-border" id="monthlyplan1">
           <div class="plan-name">
             Free
           </div>
@@ -423,9 +423,9 @@
           <div class="plan-link-simple">Get Started <img src="img/arrow-black.svg" alt=""></div>          
         </div>
 
-        <div class="plan simple-plan-border">
+        <div class="plan simple-plan-border" id="monthlyplan2">
           <div class="plan-name">
-            Free
+            Basic +
           </div>
           <div class="plan-description">
             For growing teams building apps & internal
@@ -445,7 +445,7 @@
           <div class="plan-link-simple">Get Started <img src="img/arrow-black.svg" alt=""></div>          
         </div>
 
-        <div class="plan special-plan-border custom-height">
+        <div class="plan special-plan-border custom-height" id="monthlyplan3">
           <div class="plan-tag">
             Most Popular
           </div>
@@ -469,6 +469,84 @@
               </ul>
             </div>
             <div class="plan-link-special">Get Started <img src="img/arrow-white.svg" alt=""></div>
+          </div>
+                    
+        </div>
+
+        <div class="plan simple-plan-border" id="annualplan1" style="display: none;">
+          <div class="plan-name">
+            Free
+          </div>
+          <div class="plan-description">
+            For growing teams building apps & internal
+            tools to streamline workflows.
+          </div>
+          <div class="price"><img src="img/rupee_symbol.svg" alt="">0<span>/ per year</span></div>
+          <div class="plan-divider"></div>
+          <div class="plan-list">
+            <ul>
+              <li>All including Bulb+</li>
+              <li>Bulb + Fire Indicators</li>
+              <li>Discord Live + Spl Zoom Webinar</li>
+              <li>Jailbar + White Panther</li>
+              <li>Weekly Zoom Special Webinar</li>
+            </ul>
+          </div>
+          <a href="{% url "register2" %}">
+            <div class="plan-link-simple">Get Started <img src="{% static "img/arrow-black.svg" %}" alt=""></div>          
+          </a>
+        </div>
+
+        <div class="plan simple-plan-border" id="annualplan2" style="display: none;">
+          <div class="plan-name">
+            Basic +
+          </div>
+          <div class="plan-description">
+            For growing teams building apps & internal
+            tools to streamline workflows.
+          </div>
+          <div class="price"><img src="img/rupee_symbol.svg" alt="">4099<span>/ per year</span></div>
+          <div class="plan-divider"></div>
+          <div class="plan-list">
+            <ul>
+              <li>All including Bulb+</li>
+              <li>Bulb + Fire Indicators</li>
+              <li>Discord Live + Spl Zoom Webinar</li>
+              <li>Jailbar + White Panther</li>
+              <li>Weekly Zoom Special Webinar</li>
+            </ul>
+          </div>
+          <a href="{% url "register2" %}">
+          <div class="plan-link-simple">Get Started <img src="{% static "img/arrow-black.svg" %}" alt=""></div>
+          </a>          
+        </div>
+
+        <div class="plan special-plan-border custom-height" id="annualplan3" style="display: none;">
+          <div class="plan-tag">
+            Most Popular
+          </div>
+          <div style="position: relative; top : -110px">
+            <div class="plan-name">
+              Premium
+            </div>
+            <div class="plan-description">
+              For growing teams building apps & internal
+              tools to streamline workflows.
+            </div>
+            <div class="price"><img src="img/rupee_symbol.svg" alt="">6999<span>/ per year</span></div>
+            <div class="plan-divider"></div>
+            <div class="plan-list">
+              <ul>
+                <li>All including Bulb+</li>
+                <li>Bulb + Fire Indicators</li>
+                <li>Discord Live + Spl Zoom Webinar</li>
+                <li>Jailbar + White Panther</li>
+                <li>Weekly Zoom Special Webinar</li>
+              </ul>
+            </div>
+            <a href="{% url "register2" %}">
+              <div class="plan-link-special">Get Started <img src="{% static "img/arrow-white.svg" %}" alt=""></div>
+            </a>
           </div>
                     
         </div>
